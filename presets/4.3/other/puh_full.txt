@@ -33,7 +33,7 @@
 
 
 # -- VTX table group settings --
-#$ OPTION_GROUP BEGIN: Some VTX table settings - ONLY ONE, CHOOSE WISELY!
+#$ OPTION_GROUP BEGIN: VTX table options - CHOOSE ONLY ONE!
 # vtxtable SmartAudio 2.0 with 2 powerlevels
 #$ OPTION BEGIN (UNCHECKED): TBS Unify Pro Nano SA2.0 (2 powerlevels)
 vtxtable bands 5
