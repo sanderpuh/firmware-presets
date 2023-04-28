@@ -32,8 +32,8 @@
 
 
 
-# -- VTX table settings --
-#$ OPTION_GROUP BEGIN: Some VTX table settings
+# -- VTX table group settings --
+#$ OPTION_GROUP BEGIN: Some VTX table settings - ONLY ONE, CHOOSE WISELY!
 # vtxtable SmartAudio 2.0 with 2 powerlevels
 #$ OPTION BEGIN (UNCHECKED): TBS Unify Pro Nano SA2.0 (2 powerlevels)
 vtxtable bands 5
@@ -92,15 +92,29 @@ vtxtable powerlabels 25 100 200 350
 #$ OPTION_GROUP END
 
 
-# -- OSD settings --
-#$ OPTION BEGIN (UNCHECKED): Puh OSD
-set osd_menu_background = GRAY
+
+# -- Dshot group settings --
+#$ OPTION_GROUP BEGIN: Dshot settings - ONLY ONE, CHOOSE WISELY!
+#$ OPTION BEGIN (UNCHECKED): Dshot300 (F4 or BMI)
+set motor_pwm_protocol = Dshot300
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Dshot600 (F7)
+set motor_pwm_protocol = Dshot600
+#$ OPTION END
+#$ OPTION_GROUP END
+
+
+
+# -- Race tune settings --
+#$ OPTION BEGIN (UNCHECKED): Race tune
+
 #$ OPTION END
 
 
 
-# -- Launch control settings --
-#$ OPTION BEGIN (UNCHECKED): Launch Control
+# -- Clean race RPM filter settings --
+#$ OPTION BEGIN (UNCHECKED): Filter settings
 #$ OPTION END
 
 
@@ -135,7 +149,7 @@ set yaw_srate = 59
 
 
 
-# -- aux switch & adjustment range settings --
+# -- AUX switch & adjustment range settings --
 # adjustment range settings TO BE IMPLEMENTED
 #$ OPTION BEGIN (UNCHECKED): Aux switch settings
 # aux switches
@@ -161,27 +175,13 @@ set yaw_srate = 59
 
 
 
-# -- Race RPM filter settings --
-#$ OPTION BEGIN (UNCHECKED): Clean race RPM filter settings
+# -- Launch control settings --
+#$ OPTION BEGIN (UNCHECKED): Launch Control
 #$ OPTION END
 
 
 
-# -- Dshot settings --
-#$ OPTION_GROUP BEGIN: Dshot settings
-#$ OPTION BEGIN (UNCHECKED): Dshot300 (F4 or BMI)
-set motor_pwm_protocol = Dshot300
-#$ OPTION END
-
-#$ OPTION BEGIN (UNCHECKED): Dshot600 (F7)
-set motor_pwm_protocol = Dshot600
-#$ OPTION END
-#$ OPTION_GROUP END
-
-
-
-
-# -- Race tune settings --
-#$ OPTION BEGIN (UNCHECKED): Race tune settings
-
+# -- OSD settings --
+#$ OPTION BEGIN (UNCHECKED): Puh OSD
+set osd_menu_background = GRAY
 #$ OPTION END
