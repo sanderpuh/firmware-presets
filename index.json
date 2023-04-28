@@ -157,6 +157,7 @@
       "Garban",
       "Ivan Efimov (Limon)",
       "Jye Smith",
+      "Sander Puttenstein",
       "Sugar K",
       "sugarK",
       "UAV Tech (Mark Spatz)"
@@ -234,6 +235,7 @@
       "pid",
       "pro32",
       "profile",
+      "puh",
       "race",
       "race v1",
       "race v2",
@@ -589,6 +591,31 @@
         "Garban"
       ],
       "author": "Garban",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/other/puh_full.txt",
+      "hash": "0802ea71ab69fbef85b61f1cf3e8f4979def551a39ae9ad1dbd7667493548239",
+      "title": "Puh - Complete drone setup",
+      "firmware_version": [
+        "4.3",
+        "4.4"
+      ],
+      "category": "OTHER",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "puh",
+        "analog",
+        "osd",
+        "vtx",
+        "reset",
+        "mode",
+        "modes",
+        "adjustments",
+        "aux",
+        "switch"
+      ],
+      "author": "Sander Puttenstein",
       "priority": 0
     },
     {
