@@ -153,23 +153,15 @@
       "Betaflight",
       "ctzsnooze",
       "Daniel Appel / Tehllama",
-      "Directory",
       "Garban",
-      "Ivan Efimov (Limon)",
       "Jye Smith",
       "Sander Puttenstein",
-      "Sugar K",
-      "sugarK",
-      "UAV Tech (Mark Spatz)"
+      "sugarK"
     ],
     "keywords": [
-      "1000Hz",
       "150Hz",
-      "1ms",
       "20ms",
       "250Hz",
-      "2ms",
-      "5\"",
       "500Hz",
       "50Hz",
       "Acrobaix",
@@ -186,10 +178,6 @@
       "clear",
       "Configure",
       "control",
-      "Crossfire",
-      "CRSF",
-      "ctzsnooze",
-      "CTZsoonze",
       "DDC",
       "default",
       "defaults",
@@ -198,22 +186,17 @@
       "divimath",
       "DShot telemetry",
       "ELRS",
-      "EVO",
       "expert",
       "express",
       "filter",
       "filtering",
       "filters",
       "freestyle",
-      "freesytle",
       "Garban",
       "GPS",
       "gyroflow",
       "HDzero",
       "hot",
-      "HV",
-      "karate",
-      "KarateBrot",
       "launch",
       "launch_mode",
       "leds",
@@ -225,7 +208,6 @@
       "MSP",
       "MSP VTX",
       "names",
-      "nano",
       "noisy",
       "normal",
       "OpenVTx",
@@ -233,10 +215,8 @@
       "partial",
       "Passthrough",
       "pid",
-      "pro32",
       "profile",
       "puh",
-      "race",
       "race v1",
       "race v2",
       "rates",
@@ -247,30 +227,16 @@
       "reset",
       "reset statistics",
       "rpm",
-      "rush",
-      "rush tank",
-      "rushfpv",
       "Rx",
-      "SA 2.0",
-      "SA 2.0 lite",
       "SA 2.1",
       "smoothing",
       "some",
       "stats",
-      "suagrK",
       "sugarK",
       "switch",
-      "tank solo",
-      "tank ultimate",
-      "TBS",
-      "Team Black Sheep",
-      "tiny tank",
-      "Tracer",
       "TRAMP",
       "tune",
       "tx5m.1",
-      "unify",
-      "unify pro",
       "utility",
       "very",
       "very clean",
@@ -399,26 +365,6 @@
       "priority": 100
     },
     {
-      "fullPath": "presets/4.3/filters/ctzsnooze_race.txt",
-      "hash": "3cd6b38b21527d3acb44b6e73e0df0816f9bef36ad1c4a83644d51a903aa579b",
-      "title": "ctzsnooze's race filter settings",
-      "firmware_version": [
-        "4.3",
-        "4.4"
-      ],
-      "category": "FILTERS",
-      "status": "OFFICIAL",
-      "keywords": [
-        "race",
-        "filter",
-        "filters",
-        "ctzsnooze",
-        "RPM"
-      ],
-      "author": "Betaflight",
-      "priority": 100
-    },
-    {
       "fullPath": "presets/4.3/filters/defaults.txt",
       "hash": "94dd6e400f67d5bde88bf5a6952c83255db887da83dcc9b247a04ffac43f9cd2",
       "title": "Default 4.3 Filter settings",
@@ -435,30 +381,6 @@
         "reset"
       ],
       "author": "Betaflight",
-      "priority": 100
-    },
-    {
-      "fullPath": "presets/4.3/filters/karate_array.txt",
-      "hash": "faf6fc71b3248d86bccb759cc653fa3a784dc2616f7dbfc4b1285f836992fe56",
-      "title": "the Karate array",
-      "firmware_version": [
-        "4.3",
-        "4.4"
-      ],
-      "category": "FILTERS",
-      "status": "OFFICIAL",
-      "keywords": [
-        "filter",
-        "filters",
-        "karate",
-        "race",
-        "freesytle",
-        "suagrK",
-        "CTZsoonze",
-        "KarateBrot",
-        "5\""
-      ],
-      "author": "sugarK",
       "priority": 100
     },
     {
@@ -497,21 +419,6 @@
         "switch"
       ],
       "author": "Betaflight",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.3/osd/UAV_tech_Analog.txt",
-      "hash": "b304bd4f3d0e6ab42840badced7e07847ca654c5fd048dba8c53b96128788763",
-      "title": "UAV Tech - Analog",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "OSD",
-      "status": "COMMUNITY",
-      "keywords": [
-        "analog"
-      ],
-      "author": "UAV Tech (Mark Spatz)",
       "priority": 0
     },
     {
@@ -882,438 +789,6 @@
       "priority": 10000000000
     },
     {
-      "fullPath": "presets/4.3/rc_link/generic/1000hz_race.txt",
-      "hash": "fbfada94dd59cb0581bd7725a9bf497175e03cbe5fcc504f88ae4870874ec740",
-      "title": "Generic 1000z Race",
-      "firmware_version": [
-        "4.3",
-        "4.4"
-      ],
-      "category": "RC_LINK",
-      "status": "OFFICIAL",
-      "keywords": [
-        "1000Hz",
-        "1ms",
-        "rc",
-        "rx",
-        "link",
-        "smoothing",
-        "ELRS"
-      ],
-      "author": "Sugar K",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.3/rc_link/generic/150hz_cinematic.txt",
-      "hash": "41528f843b18cecfd7676f313850c7cefbbfde6933db7fdfd53e2132c975c563",
-      "title": "Generic 150Hz Cinematic",
-      "firmware_version": [
-        "4.3",
-        "4.4"
-      ],
-      "category": "RC_LINK",
-      "status": "OFFICIAL",
-      "keywords": [
-        "150Hz",
-        "rc",
-        "rx",
-        "link",
-        "smoothing"
-      ],
-      "author": "Ivan Efimov (Limon)",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.3/rc_link/generic/150hz_freestyle.txt",
-      "hash": "7c9ea82aaec95ef6a4b51b92807c0f272922246a18085d37d8ffda621bc0079e",
-      "title": "Generic 150Hz Freestyle",
-      "firmware_version": [
-        "4.3",
-        "4.4"
-      ],
-      "category": "RC_LINK",
-      "status": "OFFICIAL",
-      "keywords": [
-        "150Hz",
-        "rc",
-        "rx",
-        "link",
-        "smoothing"
-      ],
-      "author": "Ivan Efimov (Limon)",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.3/rc_link/generic/150hz_hd_freestyle.txt",
-      "hash": "42635c2d72764cccc694c899322a800eb67d1e2aed851f6ffd6c544e86e1613d",
-      "title": "Generic 150Hz HD Freestyle",
-      "firmware_version": [
-        "4.3",
-        "4.4"
-      ],
-      "category": "RC_LINK",
-      "status": "OFFICIAL",
-      "keywords": [
-        "150Hz",
-        "rc",
-        "rx",
-        "link",
-        "smoothing"
-      ],
-      "author": "Ivan Efimov (Limon)",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.3/rc_link/generic/150hz_race.txt",
-      "hash": "bb1fd588855ead67cd4aa819af2fa669f64c0fe47907c97fc9790cd07bd59291",
-      "title": "Generic 150Hz Race",
-      "firmware_version": [
-        "4.3",
-        "4.4"
-      ],
-      "category": "RC_LINK",
-      "status": "OFFICIAL",
-      "keywords": [
-        "150Hz",
-        "rc",
-        "rx",
-        "link",
-        "smoothing"
-      ],
-      "author": "Ivan Efimov (Limon)",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.3/rc_link/generic/150hz_ultra_cinematic.txt",
-      "hash": "b55b2e9c449a610de26c553629661a17f1dc09fd558989313b1e9bd598fb193d",
-      "title": "Generic 150Hz Ultra Cinematic",
-      "firmware_version": [
-        "4.3",
-        "4.4"
-      ],
-      "category": "RC_LINK",
-      "status": "OFFICIAL",
-      "keywords": [
-        "150Hz",
-        "rc",
-        "rx",
-        "link",
-        "smoothing"
-      ],
-      "author": "Ivan Efimov (Limon)",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.3/rc_link/generic/250hz_cinematic.txt",
-      "hash": "8fb32262addb86b065aaf58c39f2b10bd23de992d53783ed0efffd2e9fcb1450",
-      "title": "Generic 250Hz Cinematic",
-      "firmware_version": [
-        "4.3",
-        "4.4"
-      ],
-      "category": "RC_LINK",
-      "status": "OFFICIAL",
-      "keywords": [
-        "250Hz",
-        "rc",
-        "rx",
-        "link",
-        "smoothing"
-      ],
-      "author": "Ivan Efimov (Limon)",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.3/rc_link/generic/250hz_freestyle.txt",
-      "hash": "0397808f17324f9b47508638f437100f4366e5cfaa2555410cd2029ebedb0fc1",
-      "title": "Generic 250Hz Freestyle",
-      "firmware_version": [
-        "4.3",
-        "4.4"
-      ],
-      "category": "RC_LINK",
-      "status": "OFFICIAL",
-      "keywords": [
-        "250Hz",
-        "rc",
-        "rx",
-        "link",
-        "smoothing"
-      ],
-      "author": "Ivan Efimov (Limon)",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.3/rc_link/generic/250hz_hd_freestyle.txt",
-      "hash": "44d991d2e09f22a7242db95c4fd34917c9497e6542242f3d1c8b54c4a1f5059a",
-      "title": "Generic 250Hz HD Freestyle",
-      "firmware_version": [
-        "4.3",
-        "4.4"
-      ],
-      "category": "RC_LINK",
-      "status": "OFFICIAL",
-      "keywords": [
-        "250Hz",
-        "rc",
-        "rx",
-        "link",
-        "smoothing"
-      ],
-      "author": "Ivan Efimov (Limon)",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.3/rc_link/generic/250hz_race.txt",
-      "hash": "836357a4504fe73e81b9c6a889ed185a5e6eacce5e0fcc318611ec290a3eeb40",
-      "title": "Generic 250Hz Race",
-      "firmware_version": [
-        "4.3",
-        "4.4"
-      ],
-      "category": "RC_LINK",
-      "status": "OFFICIAL",
-      "keywords": [
-        "250Hz",
-        "rc",
-        "rx",
-        "link",
-        "smoothing"
-      ],
-      "author": "Ivan Efimov (Limon)",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.3/rc_link/generic/250hz_ultra_cinematic.txt",
-      "hash": "ac4d82c012bb7d380c98222a4d9ff54962de7a87f86ed1e45ab04f4aa29dd01f",
-      "title": "Generic 250Hz Ultra Cinematic",
-      "firmware_version": [
-        "4.3",
-        "4.4"
-      ],
-      "category": "RC_LINK",
-      "status": "OFFICIAL",
-      "keywords": [
-        "250Hz",
-        "rc",
-        "rx",
-        "link",
-        "smoothing"
-      ],
-      "author": "Ivan Efimov (Limon)",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.3/rc_link/generic/500hz_cinematic.txt",
-      "hash": "b1d91f81c5575343024b264f4ad00ab422a4a551da5c056afc6b7ce7657bdb8c",
-      "title": "Generic 500Hz Cinematic",
-      "firmware_version": [
-        "4.3",
-        "4.4"
-      ],
-      "category": "RC_LINK",
-      "status": "OFFICIAL",
-      "keywords": [
-        "500Hz",
-        "2ms",
-        "rc",
-        "rx",
-        "link",
-        "smoothing"
-      ],
-      "author": "Ivan Efimov (Limon)",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.3/rc_link/generic/500hz_freestyle.txt",
-      "hash": "01bb65fdfece19eed6088403785f016d2b5eb1a9a89306f4e49a34814355ef61",
-      "title": "Generic 500Hz Freestyle",
-      "firmware_version": [
-        "4.3",
-        "4.4"
-      ],
-      "category": "RC_LINK",
-      "status": "OFFICIAL",
-      "keywords": [
-        "500Hz",
-        "2ms",
-        "rc",
-        "rx",
-        "link",
-        "smoothing"
-      ],
-      "author": "Ivan Efimov (Limon)",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.3/rc_link/generic/500hz_hd_freestyle.txt",
-      "hash": "dff6ad4296d2e42feba4248f8976193d11cf64b1b430cf8b985a6cfaa935d785",
-      "title": "Generic 500Hz HD Freestyle",
-      "firmware_version": [
-        "4.3",
-        "4.4"
-      ],
-      "category": "RC_LINK",
-      "status": "OFFICIAL",
-      "keywords": [
-        "500Hz",
-        "2ms",
-        "rc",
-        "rx",
-        "link",
-        "smoothing"
-      ],
-      "author": "Ivan Efimov (Limon)",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.3/rc_link/generic/500hz_race.txt",
-      "hash": "56219dda77c4aa2f1c4d5f0030a74c67d5da73695e3402ff0c2ab7217fce24c2",
-      "title": "Generic 500Hz Race",
-      "firmware_version": [
-        "4.3",
-        "4.4"
-      ],
-      "category": "RC_LINK",
-      "status": "OFFICIAL",
-      "keywords": [
-        "500Hz",
-        "2ms",
-        "rc",
-        "rx",
-        "link",
-        "smoothing"
-      ],
-      "author": "Ivan Efimov (Limon)",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.3/rc_link/generic/500hz_ultra_cinematic.txt",
-      "hash": "935cc96dc131770c6770b7a31667daca5e7751283a7413dad497cb26897045ab",
-      "title": "Generic 500Hz Ultra Cinematic",
-      "firmware_version": [
-        "4.3",
-        "4.4"
-      ],
-      "category": "RC_LINK",
-      "status": "OFFICIAL",
-      "keywords": [
-        "500Hz",
-        "2ms",
-        "rc",
-        "rx",
-        "link",
-        "smoothing"
-      ],
-      "author": "Ivan Efimov (Limon)",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.3/rc_link/generic/50hz_cinematic.txt",
-      "hash": "31a068b280ab0beddc038c499ad1c1701185dcacd12f4e24a6ca1c1a1b41b3ac",
-      "title": "Generic 50Hz Cinematic",
-      "firmware_version": [
-        "4.3",
-        "4.4"
-      ],
-      "category": "RC_LINK",
-      "status": "OFFICIAL",
-      "keywords": [
-        "50Hz",
-        "20ms",
-        "rc",
-        "rx",
-        "link",
-        "smoothing"
-      ],
-      "author": "Ivan Efimov (Limon)",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.3/rc_link/generic/50hz_freestyle.txt",
-      "hash": "15c47f7ce0b9129e8d2758ced1736c1ecfc6d225e305ef937ea20efea0f4358f",
-      "title": "Generic 50Hz Freestyle",
-      "firmware_version": [
-        "4.3",
-        "4.4"
-      ],
-      "category": "RC_LINK",
-      "status": "OFFICIAL",
-      "keywords": [
-        "50Hz",
-        "20ms",
-        "rc",
-        "rx",
-        "link",
-        "smoothing"
-      ],
-      "author": "Ivan Efimov (Limon)",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.3/rc_link/generic/50hz_hd_freestyle.txt",
-      "hash": "08c6f1d9f4b45c9d5abd5bfc6c12cc8b458c67355aa96c386316c5d6065c97ad",
-      "title": "Generic 50Hz HD Freestyle",
-      "firmware_version": [
-        "4.3",
-        "4.4"
-      ],
-      "category": "RC_LINK",
-      "status": "OFFICIAL",
-      "keywords": [
-        "50Hz",
-        "20ms",
-        "rc",
-        "rx",
-        "link",
-        "smoothing"
-      ],
-      "author": "Ivan Efimov (Limon)",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.3/rc_link/generic/50hz_race.txt",
-      "hash": "8c03a9dee35a95031abc9bd884c1d37c870d28ea733cb2f7735f4538e6bbcf07",
-      "title": "Generic 50Hz Race",
-      "firmware_version": [
-        "4.3",
-        "4.4"
-      ],
-      "category": "RC_LINK",
-      "status": "OFFICIAL",
-      "keywords": [
-        "50Hz",
-        "20ms",
-        "rc",
-        "rx",
-        "link",
-        "smoothing"
-      ],
-      "author": "Ivan Efimov (Limon)",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.3/rc_link/generic/50hz_ultra_cinematic.txt",
-      "hash": "4df997249c48be3878a4c8030b7e47668cddaf74c2619ff84001d7d09c6ddcc3",
-      "title": "Generic 50Hz Ultra Cinematic",
-      "firmware_version": [
-        "4.3",
-        "4.4"
-      ],
-      "category": "RC_LINK",
-      "status": "OFFICIAL",
-      "keywords": [
-        "50Hz",
-        "20ms",
-        "rc",
-        "rx",
-        "link",
-        "smoothing"
-      ],
-      "author": "Ivan Efimov (Limon)",
-      "priority": 0
-    },
-    {
       "fullPath": "presets/4.3/rc_link/reset_to_defaults.txt",
       "hash": "8b88664102911f576820ad482c5680a61e1c3c0065df7be544d84ebeefe31362",
       "title": "Reset ALL RC link related settings",
@@ -1330,78 +805,6 @@
       ],
       "author": "Betaflight",
       "priority": 0
-    },
-    {
-      "fullPath": "presets/4.3/rc_link/tbs/crossfire_150hz.txt",
-      "hash": "e456a2010e44fdb60451376a459161753abb53b4786e138528e0e31434aed27e",
-      "title": "TBS Crossfire 150Hz",
-      "firmware_version": [
-        "4.3",
-        "4.4"
-      ],
-      "category": "RC_LINK",
-      "status": "OFFICIAL",
-      "keywords": [
-        "150Hz",
-        "TBS",
-        "Crossfire",
-        "Team Black Sheep",
-        "CRSF",
-        "rc",
-        "rx",
-        "link"
-      ],
-      "author": "Ivan Efimov (Limon)",
-      "force_options_review": true,
-      "priority": 10000000000
-    },
-    {
-      "fullPath": "presets/4.3/rc_link/tbs/crossfire_50hz.txt",
-      "hash": "50728820731cad1e79c60d95190d5071947dcc924a5b2c7bafcf79edaa232cd7",
-      "title": "TBS Crossfire 50Hz",
-      "firmware_version": [
-        "4.3",
-        "4.4"
-      ],
-      "category": "RC_LINK",
-      "status": "OFFICIAL",
-      "keywords": [
-        "50Hz",
-        "TBS",
-        "Crossfire",
-        "Team Black Sheep",
-        "CRSF",
-        "rc",
-        "rx",
-        "link"
-      ],
-      "author": "Ivan Efimov (Limon)",
-      "force_options_review": true,
-      "priority": 10000000000
-    },
-    {
-      "fullPath": "presets/4.3/rc_link/tbs/tracer_250hz.txt",
-      "hash": "ec12554f667716724d84f93d03e65fec34925153a23c9d7ef74bba26e10fa19c",
-      "title": "TBS Tracer 250Hz",
-      "firmware_version": [
-        "4.3",
-        "4.4"
-      ],
-      "category": "RC_LINK",
-      "status": "OFFICIAL",
-      "keywords": [
-        "250Hz",
-        "TBS",
-        "Tracer",
-        "Team Black Sheep",
-        "CRSF",
-        "rc",
-        "rx",
-        "link"
-      ],
-      "author": "Ivan Efimov (Limon)",
-      "force_options_review": true,
-      "priority": 10000000000
     },
     {
       "fullPath": "presets/4.3/tune/defaults.txt",
@@ -1503,164 +906,6 @@
       "priority": 1000000
     },
     {
-      "fullPath": "presets/4.3/vtx/Unify_EVO_5G8_HV_SA.txt",
-      "hash": "c06e2bb7b83c59c0c097d724ba7ca318a70c80f2ef8880424419b5217b65e350",
-      "title": "TBS Unify EVO 5G8 (HV) - SA 2.1",
-      "firmware_version": [
-        "4.2",
-        "4.3",
-        "4.4"
-      ],
-      "category": "VTX",
-      "status": "COMMUNITY",
-      "keywords": [
-        "vtx",
-        "vtx table",
-        "tbs",
-        "unify",
-        "pro32",
-        "HV",
-        "SA 2.1",
-        "EVO"
-      ],
-      "author": "sugarK",
-      "priority": 1000000
-    },
-    {
-      "fullPath": "presets/4.3/vtx/Unify_Pro32_HV_SA2_1.txt",
-      "hash": "7e6a01be7635a90d71603870f1cf6917b522285eac21dbf89e3b28f514c02668",
-      "title": "TBS Unify Pro32 HV SA 2.1",
-      "firmware_version": [
-        "4.2",
-        "4.3",
-        "4.4"
-      ],
-      "category": "VTX",
-      "status": "COMMUNITY",
-      "keywords": [
-        "vtx",
-        "vtx table",
-        "tbs",
-        "unify",
-        "pro32",
-        "HV",
-        "SA 2.1"
-      ],
-      "author": "sugarK",
-      "priority": 1000000
-    },
-    {
-      "fullPath": "presets/4.3/vtx/Unify_Pro32_Nano_SA2_1.txt",
-      "hash": "5cd96ef3198c56a095887f66b34920635167597b06ef9af1d908481e73034b72",
-      "title": "TBS Unify Pro32 Nano - SA 2.1",
-      "firmware_version": [
-        "4.2",
-        "4.3",
-        "4.4"
-      ],
-      "category": "VTX",
-      "status": "COMMUNITY",
-      "keywords": [
-        "vtx",
-        "vtx table",
-        "tbs",
-        "unify",
-        "pro32",
-        "nano",
-        "SA 2.1"
-      ],
-      "author": "sugarK",
-      "priority": 1000000
-    },
-    {
-      "fullPath": "presets/4.3/vtx/Unify_Pro_HV_800mw_Unify_Pro_V3_SA_2_0.txt",
-      "hash": "2e5f3f402c6976e0f48c6526f95f3a2acdf03f8f87b5a619bf4f509a1cab8323",
-      "title": "TBS Unify Pro HV 800mw / TBS Unify Pro V3 (5v) SA 2.0",
-      "firmware_version": [
-        "4.2",
-        "4.3",
-        "4.4"
-      ],
-      "category": "VTX",
-      "status": "COMMUNITY",
-      "keywords": [
-        "vtx",
-        "vtx table",
-        "tbs",
-        "unify pro",
-        "HV",
-        "SA 2.0"
-      ],
-      "author": "sugarK",
-      "priority": 1000000
-    },
-    {
-      "fullPath": "presets/4.3/vtx/Unify_Pro_HV_Race_Not_Race_V2_SA2_0.txt",
-      "hash": "627fa1347f11d14cc220b51349da90e0d4908deec83cd05311d8347c5ba06c58",
-      "title": "TBS Unify Pro HV Race (Not Race V2) SA 2.0",
-      "firmware_version": [
-        "4.2",
-        "4.3",
-        "4.4"
-      ],
-      "category": "VTX",
-      "status": "COMMUNITY",
-      "keywords": [
-        "vtx",
-        "vtx table",
-        "tbs",
-        "unify pro",
-        "HV",
-        "SA 2.0"
-      ],
-      "author": "sugarK",
-      "priority": 1000000
-    },
-    {
-      "fullPath": "presets/4.3/vtx/Unify_Pro_HV_Race_V2 _SA2_1.txt",
-      "hash": "323c042886f144040ac2d7bbb959b490a62157276be195abd0253c51830e076e",
-      "title": "TBS Unify Pro HV Race (Not Race V2) - SA 2.0",
-      "firmware_version": [
-        "4.2",
-        "4.3",
-        "4.4"
-      ],
-      "category": "VTX",
-      "status": "COMMUNITY",
-      "keywords": [
-        "vtx",
-        "vtx table",
-        "tbs",
-        "unify pro",
-        "HV",
-        "SA 2.0"
-      ],
-      "author": "sugarK",
-      "priority": 1000000
-    },
-    {
-      "fullPath": "presets/4.3/vtx/Unify_Pro_Nano_SA2_0_lite.txt",
-      "hash": "d962f3eb01da8e77384397c4716ca776b144433cc5a6559f1d80e1a86dfc0c07",
-      "title": "TBS Unify Pro Nano (Not Pro32 Nano) SA 2.0 lite",
-      "firmware_version": [
-        "4.2",
-        "4.3",
-        "4.4"
-      ],
-      "category": "VTX",
-      "status": "COMMUNITY",
-      "keywords": [
-        "vtx",
-        "vtx table",
-        "tbs",
-        "unify pro",
-        "HV",
-        "SA 2.0 lite"
-      ],
-      "author": "sugarK",
-      "priority": 1000000
-    },
-    {
       "fullPath": "presets/4.3/vtx/defaults.txt",
       "hash": "f771542d93f15f993d39d97f9004ede104ba7dfebff45f68863aa25f30275388",
       "title": "Default 4.3 VTX settings",
@@ -1695,30 +940,6 @@
         "vtxtable"
       ],
       "author": "Betaflight",
-      "priority": 1000000
-    },
-    {
-      "fullPath": "presets/4.3/vtx/rush_sa2.1_vtx_tables.txt",
-      "hash": "3014fe2d8a90669292cce908f7234c181116a32a9569e3a983c9cefa4a5166bc",
-      "title": "Rush Tiny Tank, Tank Racing, Tank Ultimate Plus/Mini/II, and Tank Solo VTX tables",
-      "firmware_version": [
-        "4.2",
-        "4.3",
-        "4.4"
-      ],
-      "category": "VTX",
-      "status": "COMMUNITY",
-      "keywords": [
-        "vtx",
-        "vtx table",
-        "rush tank",
-        "rush",
-        "rushfpv",
-        "tank ultimate",
-        "tank solo",
-        "tiny tank"
-      ],
-      "author": "Directory",
       "priority": 1000000
     },
     {
