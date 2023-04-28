@@ -151,7 +151,6 @@
     ],
     "author": [
       "Betaflight",
-      "ctzsnooze",
       "Daniel Appel / Tehllama",
       "Garban",
       "Jye Smith",
@@ -159,22 +158,15 @@
       "sugarK"
     ],
     "keywords": [
-      "150Hz",
-      "20ms",
-      "250Hz",
-      "500Hz",
-      "50Hz",
       "Acrobaix",
       "actual",
       "adjustments",
       "analog",
       "aux",
       "basic",
-      "betaflight",
       "blackbox",
       "camera",
       "camera_control",
-      "clean",
       "clear",
       "Configure",
       "control",
@@ -184,23 +176,18 @@
       "digital",
       "disable",
       "divimath",
-      "DShot telemetry",
       "ELRS",
       "expert",
-      "express",
       "filter",
-      "filtering",
       "filters",
       "freestyle",
       "Garban",
       "GPS",
       "gyroflow",
       "HDzero",
-      "hot",
       "launch",
       "launch_mode",
       "leds",
-      "link",
       "log",
       "logging",
       "mode",
@@ -208,8 +195,6 @@
       "MSP",
       "MSP VTX",
       "names",
-      "noisy",
-      "normal",
       "OpenVTx",
       "OSD",
       "partial",
@@ -226,7 +211,6 @@
       "rc_smoothing",
       "reset",
       "reset statistics",
-      "rpm",
       "Rx",
       "SA 2.1",
       "smoothing",
@@ -238,9 +222,6 @@
       "tune",
       "tx5m.1",
       "utility",
-      "very",
-      "very clean",
-      "very noisy",
       "vtx",
       "vtx table",
       "vtxtable",
@@ -249,121 +230,6 @@
     ]
   },
   "presets": [
-    {
-      "fullPath": "presets/4.3/filters/basic_rpm_clean.txt",
-      "hash": "768b5997943f1febea1ab285d29871131a5bd50e303e66f435c462175e952051",
-      "title": "4.3 Filter settings for CLEAN build with RPM FILTERING.",
-      "firmware_version": [
-        "4.3",
-        "4.4"
-      ],
-      "category": "FILTERS",
-      "status": "OFFICIAL",
-      "keywords": [
-        "rpm",
-        "DShot telemetry",
-        "filter",
-        "filters",
-        "clean",
-        "basic",
-        "betaflight"
-      ],
-      "author": "Betaflight",
-      "priority": 100
-    },
-    {
-      "fullPath": "presets/4.3/filters/basic_rpm_noisy.txt",
-      "hash": "80addd2a95bd1cb3bf3fe8fe9e2fe666b6954c7f8abd9f096f784b251430fe4c",
-      "title": "4.3 Filter settings for NOISY build with RPM FILTERING.",
-      "firmware_version": [
-        "4.3",
-        "4.4"
-      ],
-      "category": "FILTERS",
-      "status": "OFFICIAL",
-      "keywords": [
-        "rpm",
-        "DShot telemetry",
-        "filter",
-        "filters",
-        "noisy",
-        "basic",
-        "betaflight"
-      ],
-      "author": "Betaflight",
-      "priority": 100
-    },
-    {
-      "fullPath": "presets/4.3/filters/basic_rpm_normal.txt",
-      "hash": "bd9aa6726c5019a314a6a4266b63edebb610a28985b637029928a77b104ea6ab",
-      "title": "4.3 Filter settings for NORMAL build with RPM FILTERING.",
-      "firmware_version": [
-        "4.3",
-        "4.4"
-      ],
-      "category": "FILTERS",
-      "status": "OFFICIAL",
-      "keywords": [
-        "rpm",
-        "DShot telemetry",
-        "filter",
-        "filters",
-        "normal",
-        "basic",
-        "betaflight"
-      ],
-      "author": "Betaflight",
-      "priority": 100
-    },
-    {
-      "fullPath": "presets/4.3/filters/basic_rpm_very_clean.txt",
-      "hash": "e1deb87cf561678e7f3adffd2feb254124a07c6f23ce7f1cbf336b5ce4f6f3d1",
-      "title": "4.3 Filter settings for VERY CLEAN build with RPM FILTERING.",
-      "firmware_version": [
-        "4.3",
-        "4.4"
-      ],
-      "category": "FILTERS",
-      "status": "OFFICIAL",
-      "keywords": [
-        "rpm",
-        "filter",
-        "filters",
-        "filtering",
-        "very clean",
-        "very",
-        "clean",
-        "basic",
-        "betaflight"
-      ],
-      "author": "Betaflight",
-      "priority": 100
-    },
-    {
-      "fullPath": "presets/4.3/filters/basic_rpm_very_noisy.txt",
-      "hash": "a3cc09233cdafe004c719cc9d1e2920b72086c48a190fc6dc3928e4cb054c09e",
-      "title": "4.3 Filter settings for VERY NOISY build with RPM FILTERING.",
-      "firmware_version": [
-        "4.3",
-        "4.4"
-      ],
-      "category": "FILTERS",
-      "status": "OFFICIAL",
-      "keywords": [
-        "rpm",
-        "filter",
-        "filters",
-        "filtering",
-        "very",
-        "noisy",
-        "very noisy",
-        "hot",
-        "basic",
-        "betaflight"
-      ],
-      "author": "Betaflight",
-      "priority": 100
-    },
     {
       "fullPath": "presets/4.3/filters/defaults.txt",
       "hash": "94dd6e400f67d5bde88bf5a6952c83255db887da83dcc9b247a04ffac43f9cd2",
@@ -694,99 +560,6 @@
       ],
       "author": "Betaflight",
       "priority": 0
-    },
-    {
-      "fullPath": "presets/4.3/rc_link/elrs_150hz.txt",
-      "hash": "5aaa44c727f95f4d5ab31ad1374cd882cfef365c7ed83d2fc88d2c3fc8ad8b8e",
-      "title": "ExpressLRS 150Hz",
-      "firmware_version": [
-        "4.3",
-        "4.4"
-      ],
-      "category": "RC_LINK",
-      "status": "OFFICIAL",
-      "keywords": [
-        "ELRS",
-        "express",
-        "150Hz",
-        "rc",
-        "rx",
-        "link",
-        "smoothing"
-      ],
-      "author": "ctzsnooze",
-      "force_options_review": true,
-      "priority": 10000000000
-    },
-    {
-      "fullPath": "presets/4.3/rc_link/elrs_250hz.txt",
-      "hash": "459d815401af6a39e9536568564bb2fd8745f6d6b57a9abda8937e6f7409903f",
-      "title": "ExpressLRS 250Hz",
-      "firmware_version": [
-        "4.3",
-        "4.4"
-      ],
-      "category": "RC_LINK",
-      "status": "OFFICIAL",
-      "keywords": [
-        "ELRS",
-        "express",
-        "250Hz",
-        "rc",
-        "rx",
-        "link",
-        "smoothing"
-      ],
-      "author": "ctzsnooze",
-      "force_options_review": true,
-      "priority": 10000000000
-    },
-    {
-      "fullPath": "presets/4.3/rc_link/elrs_500hz.txt",
-      "hash": "9dfd1c1ab41dfd6a741867188d3fe66ac32873c60e0605b5f36066360e732fcf",
-      "title": "ExpressLRS 500Hz",
-      "firmware_version": [
-        "4.3",
-        "4.4"
-      ],
-      "category": "RC_LINK",
-      "status": "OFFICIAL",
-      "keywords": [
-        "ELRS",
-        "express",
-        "500Hz",
-        "rc",
-        "rx",
-        "link",
-        "smoothing"
-      ],
-      "author": "ctzsnooze",
-      "force_options_review": true,
-      "priority": 10000000000
-    },
-    {
-      "fullPath": "presets/4.3/rc_link/elrs_50hz.txt",
-      "hash": "02c473aa2d528c195cf2bd0a99aae1b90259a735a7f077328d07cf1c628bc153",
-      "title": "ExpressLRS 50Hz",
-      "firmware_version": [
-        "4.3",
-        "4.4"
-      ],
-      "category": "RC_LINK",
-      "status": "OFFICIAL",
-      "keywords": [
-        "ELRS",
-        "express",
-        "50Hz",
-        "20ms",
-        "rc",
-        "rx",
-        "link",
-        "smoothing"
-      ],
-      "author": "ctzsnooze",
-      "force_options_review": true,
-      "priority": 10000000000
     },
     {
       "fullPath": "presets/4.3/rc_link/reset_to_defaults.txt",
