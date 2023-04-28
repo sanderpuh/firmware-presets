@@ -9,7 +9,6 @@
 
 #$ PARSER: MARKED
 
-#$ DESCRIPTION: <img src="https://i0.wp.com/theuavtech.com/wp-content/uploads/2020/10/icon-150x150-1.png" width="125px" style="margin-left: auto; margin-right: auto; display: block;"/>
 #$ DESCRIPTION: 
 #$ DESCRIPTION: Information:
 #$ DESCRIPTION: -----------
@@ -94,28 +93,33 @@ vtxtable powerlabels 25 100 200 350
 
 
 
-# -- Dshot group settings --
-#$ OPTION_GROUP BEGIN: Dshot settings - ONLY ONE, CHOOSE WISELY!
-#$ OPTION BEGIN (UNCHECKED): Dshot300 (F4 or BMI)
-set motor_pwm_protocol = Dshot300
-#$ OPTION END
+# -- FC specific group settings --
+#$ OPTION_GROUP BEGIN: FC specific settings
+  #$ OPTION BEGIN (UNCHECKED): Dshot300 (F4 or BMI)
+  set motor_pwm_protocol = Dshot300
+  #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): Dshot600 (F7)
-set motor_pwm_protocol = Dshot600
-#$ OPTION END
+  #$ OPTION BEGIN (UNCHECKED): Dshot600 (F7)
+  set motor_pwm_protocol = Dshot600
+  #$ OPTION END
+
+  #$ OPTION BEGIN (UNCHECKED): Rotate Foxeer F722 V1 [TO BE ADDED]
+  
+  #$ OPTION END
 #$ OPTION_GROUP END
 
 
 
 # -- Race tune settings --
-#$ OPTION BEGIN (UNCHECKED): Race tune
+#$ OPTION BEGIN (UNCHECKED): Race tune [TO BE ADDED]
 
 #$ OPTION END
 
 
 
 # -- Clean race RPM filter settings --
-#$ OPTION BEGIN (UNCHECKED): Filter settings
+#$ OPTION BEGIN (UNCHECKED): Filter settings [TO BE ADDED]
+
 #$ OPTION END
 
 
@@ -135,24 +139,15 @@ set rc_smoothing_auto_factor_throttle = 25
 
 
 # -- Rate settings --
-#$ OPTION BEGIN (UNCHECKED): Rate profile for racing
-set rates_type = BETAFLIGHT
-set roll_rc_rate = 100
-set pitch_rc_rate = 100
-set yaw_rc_rate = 100
-set roll_expo = 1
-set pitch_expo = 1
-set yaw_expo = 1
-set roll_srate = 59
-set pitch_srate = 59
-set yaw_srate = 59
+#$ OPTION BEGIN (UNCHECKED): Rate profile [TO BE ADDED]
+
 #$ OPTION END
 
 
 
 # -- AUX switch & adjustment range settings --
 # adjustment range settings TO BE IMPLEMENTED
-#$ OPTION BEGIN (UNCHECKED): Aux switch settings
+#$ OPTION BEGIN (UNCHECKED): Aux switches [TO BE ADDED]
 # aux switches
 # aux 0 0 0 900 900 0 0
 # aux 1 0 0 900 900 0 0
@@ -177,12 +172,13 @@ set yaw_srate = 59
 
 
 # -- Launch control settings --
-#$ OPTION BEGIN (UNCHECKED): Launch Control
+#$ OPTION BEGIN (UNCHECKED): Launch Control [TO BE ADDED]
+
 #$ OPTION END
 
 
 
 # -- OSD settings --
-#$ OPTION BEGIN (UNCHECKED): Puh OSD
+#$ OPTION BEGIN (UNCHECKED): OSD [TO BE ADDED]
 set osd_menu_background = GRAY
 #$ OPTION END
