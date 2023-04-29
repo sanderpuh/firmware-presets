@@ -23,12 +23,12 @@
 #$ INCLUDE_WARNING: misc/warnings/en/dshot.txt
 #$ INCLUDE_WARNING: misc/warnings/en/rpm_filters.txt
 
-#$ INCLUDE: presets/4.3/filters/defaults.txt
-#$ INCLUDE: presets/4.3/modes/defaults.txt
-#$ INCLUDE: presets/4.3/rates/defaults.txt
-#$ INCLUDE: presets/4.3/rc_link/defaults.txt
-#$ INCLUDE: presets/4.3/tune/defaults.txt
-#$ INCLUDE: presets/4.3/filters/defaults.txt
+
+# #$ INCLUDE: presets/4.3/modes/defaults.txt
+# #$ INCLUDE: presets/4.3/rates/defaults.txt
+# #$ INCLUDE: presets/4.3/rc_link/defaults.txt
+# #$ INCLUDE: presets/4.3/tune/defaults.txt
+# #$ INCLUDE: presets/4.3/filters/defaults.txt
 
 
 
@@ -103,7 +103,7 @@ vtxtable powerlabels 25 100 200 350
   set motor_pwm_protocol = Dshot600
   #$ OPTION END
 
-  #$ OPTION BEGIN (UNCHECKED): Foxeer F722 V1 [TO BE ADDED]
+  #$ OPTION BEGIN (UNCHECKED): Foxeer F722 V1
   serial 0 64 115200 57600 0 115200
   set align_board_yaw = 180
   #$ OPTION END
@@ -165,7 +165,7 @@ set yaw_srate = 47
 
 # -- AUX switch & adjustment range settings --
 # adjustment range settings TO BE IMPLEMENTED
-#$ OPTION BEGIN (UNCHECKED): Aux switches and radio settings [TO BE ADDED]
+#$ OPTION BEGIN (UNCHECKED): Aux switches settings
 # aux switches
 aux 0 0 0 1900 2100 0 0
 aux 1 13 1 1900 2100 0 0
@@ -198,7 +198,7 @@ set launch_control_gain = 40
 
 
 # -- OSD settings --
-#$ OPTION BEGIN (UNCHECKED): OSD [TO BE ADDED]
+#$ OPTION BEGIN (UNCHECKED): OSD
 set vcd_video_system = NTSC
 set osd_logo_on_arming = ON
 set osd_tim1 = 2561
