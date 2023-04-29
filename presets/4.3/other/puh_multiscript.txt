@@ -35,26 +35,28 @@
   #$ OPTION BEGIN (UNCHECKED): 5 Inch 6S
   #$ INCLUDE: presets/4.4/tune/defaults.txt
   set p_pitch = 37
-  set i_pitch = 67
-  set d_pitch = 26
-  set f_pitch = 19
+  set i_pitch = 60
+  set d_pitch = 18
+  set f_pitch = 99
   
   set p_roll = 35
-  set i_roll = 63
-  set d_roll = 23
-  set f_roll = 19
+  set i_roll = 57
+  set d_roll = 14
+  set f_roll = 95
   
   set p_yaw = 35
-  set i_yaw = 63
-  set f_yaw = 19
-  set d_min_roll = 19
-  set d_min_pitch = 21
+  set i_yaw = 57
+  set f_yaw = 95
+  set d_min_roll = 13
+  set d_min_pitch = 16
   
   set simplified_pids_mode = RPY
   set simplified_master_multiplier = 80
-  set simplified_d_gain = 80
-  set simplified_dmax_gain = 60
-  set simplified_feedforward_gain = 20
+  set simplified_i_gain = 90
+  set simplified_d_gain = 55
+  set simplified_dmax_gain = 40
+  set simplified_pitch_d_gain = 110
+
   #$ OPTION END
 
 
