@@ -31,39 +31,9 @@
 
 
 
-# -- FC specific group settings --
-#$ OPTION_GROUP BEGIN: FC specific settings
-  #$ OPTION BEGIN (UNCHECKED): Foxeer F722 V1
-  serial 0 64 115200 57600 0 115200
-  set align_board_yaw = 180
-  #$ OPTION END
-
-  #$ OPTION BEGIN (UNCHECKED): Custom defaults
-  set pilot_name = PUH
-  set craft_name = 
-  set osd_craft_name_pos = 234
-  set small_angle = 180
-  set min_check = 1020
-  set max_check = 1980
-  set min_throttle = 1020
-  beeper -ON_USB
-  beacon RX_LOST
-  beacon RX_SET
-  set debug_mode = GYRO_SCALED
-  set yaw_motors_reversed = ON
-  #$ OPTION END
-  
-  #$ OPTION BEGIN (UNCHECKED): ELRS Betaflight Passthrough
-  feature -TELEMETRY
-  set serialrx_inverted = off
-  set serialrx_halfduplex = off
-  #$ OPTION END
-#$ OPTION_GROUP END
-
-
 
 # -- Race tune settings --
-#$ OPTION BEGIN (UNCHECKED): Race tune
+#$ OPTION BEGIN (UNCHECKED): PID tune 5 inch 6s race
 set p_pitch = 37
 set i_pitch = 67
 set d_pitch = 26
@@ -89,8 +59,8 @@ set simplified_feedforward_gain = 20
 
 
 
-# -- Clean race RPM filter settings --
-#$ OPTION_GROUP BEGIN: RPM Filter settings
+# -- Dshot & RPM filter settings --
+#$ OPTION_GROUP BEGIN: Dshot settings - CHOOSE ONLY ONE!
   #$ OPTION BEGIN (UNCHECKED): Dshot300 (F4 or BMI)
   set motor_pwm_protocol = Dshot300
   #$ OPTION END
@@ -98,7 +68,9 @@ set simplified_feedforward_gain = 20
   #$ OPTION BEGIN (UNCHECKED): Dshot600 (F7)
   set motor_pwm_protocol = Dshot600
   #$ OPTION END
+#$ OPTION_GROUP END
 
+#$ OPTION_GROUP BEGIN: RPM Filter settings - CHOOSE ONLY ONE!
   #$ OPTION BEGIN (UNCHECKED): RPM Filter settings VERY CLEAN
   #$ INCLUDE: presets/4.3/filters/defaults.txt
   set dshot_bidir = ON
@@ -150,76 +122,104 @@ set simplified_feedforward_gain = 20
 #$ OPTION_GROUP END
 
 
-# -- RC Link 250hz race settings --
-#$ OPTION BEGIN (UNCHECKED): Tracer / ELRS 250Hz race
-feature RX_SERIAL
-set serialrx_provider = CRSF
-set feedforward_averaging = 2_POINT
-set feedforward_smooth_factor = 35
-set feedforward_jitter_factor = 4
-set feedforward_boost = 18
-set rc_smoothing_auto_factor = 25
-set rc_smoothing_auto_factor_throttle = 25
-#$ OPTION END
+
+# -- FC specific group settings --
+#$ OPTION_GROUP BEGIN: FC specific settings
+  #$ OPTION BEGIN (UNCHECKED): Foxeer F722 V1
+  serial 0 64 115200 57600 0 115200
+  set align_board_yaw = 180
+  #$ OPTION END
+#$ OPTION_GROUP END
 
 
 
-# -- Rate settings --
-#$ OPTION BEGIN (UNCHECKED): Rate profile
-set rates_type = BETAFLIGHT
-set roll_rc_rate = 105
-set pitch_rc_rate = 105
-set yaw_rc_rate = 100
-set roll_srate = 64
-set pitch_srate = 63
-set yaw_srate = 47
-#$ OPTION END
+# -- Miscellanious --
+#$ OPTION_GROUP BEGIN: Miscellanious settings
+  #$ OPTION BEGIN (UNCHECKED): Puh Custom defaults
+  set pilot_name = PUH
+  set craft_name = 
+  set osd_craft_name_pos = 234
+  set small_angle = 180
+  set min_check = 1020
+  set max_check = 1980
+  set min_throttle = 1020
+  beeper -ON_USB
+  beacon RX_LOST
+  beacon RX_SET
+  set debug_mode = GYRO_SCALED
+  set yaw_motors_reversed = ON
+  #$ OPTION END
+ 
+  # -- AUX switch settings --
+  #$ OPTION BEGIN (UNCHECKED): Aux switch settings
+  aux 0 0 0 1900 2100 0 0
+  aux 1 13 1 1900 2100 0 0
+  aux 2 26 0 1900 2100 0 0
+  aux 3 35 2 1900 2100 0 0
+  aux 4 49 1 1400 1600 0 0
+  #$ OPTION END
 
+  # -- Launch control settings --
+  #$ OPTION BEGIN (UNCHECKED): Launch Control
+  set launch_control_mode = PITCHONLY
+  set launch_angle_limit = 70
+  set launch_trigger_allow_reset = ON
+  set launch_trigger_throttle_percent = 20
+  set launch_angle_limit = 70
+  set launch_control_gain = 40
+  #$ OPTION END
 
+  # -- OSD settings --
+  #$ OPTION BEGIN (UNCHECKED): OSD
+  set vcd_video_system = NTSC
+  set osd_logo_on_arming = ON
+  set osd_tim1 = 2561
+  set osd_vbat_pos = 393
+  set osd_link_quality_pos = 2410
+  set osd_tim_2_pos = 2447
+  set osd_flymode_pos = 409
+  set osd_throttle_pos = 2417
+  set osd_vtx_channel_pos = 373
+  set osd_current_pos = 352
+  set osd_mah_drawn_pos = 386
+  set osd_pilot_name_pos = 2061
+  set osd_warnings_pos = 14666
+  set osd_avg_cell_voltage_pos = 2442
+  set osd_canvas_width = 30
+  set osd_canvas_height = 13
+  set osd_menu_background = GRAY
+  #$ OPTION END
+ 
+  # -- RC Link 250hz race settings --
+  #$ OPTION BEGIN (UNCHECKED): Tracer / ELRS 250Hz race
+  feature RX_SERIAL
+  set serialrx_provider = CRSF
+  set feedforward_averaging = 2_POINT
+  set feedforward_smooth_factor = 35
+  set feedforward_jitter_factor = 4
+  set feedforward_boost = 18
+  set rc_smoothing_auto_factor = 25
+  set rc_smoothing_auto_factor_throttle = 25
+  #$ OPTION END
 
-# -- AUX switch settings --
-#$ OPTION BEGIN (UNCHECKED): Aux switch settings
-aux 0 0 0 1900 2100 0 0
-aux 1 13 1 1900 2100 0 0
-aux 2 26 0 1900 2100 0 0
-aux 3 35 2 1900 2100 0 0
-aux 4 49 1 1400 1600 0 0
-#$ OPTION END
-
-
-
-# -- Launch control settings --
-#$ OPTION BEGIN (UNCHECKED): Launch Control
-set launch_control_mode = PITCHONLY
-set launch_angle_limit = 70
-set launch_trigger_allow_reset = ON
-set launch_trigger_throttle_percent = 20
-set launch_angle_limit = 70
-set launch_control_gain = 40
-#$ OPTION END
-
-
-
-# -- OSD settings --
-#$ OPTION BEGIN (UNCHECKED): OSD
-set vcd_video_system = NTSC
-set osd_logo_on_arming = ON
-set osd_tim1 = 2561
-set osd_vbat_pos = 393
-set osd_link_quality_pos = 2410
-set osd_tim_2_pos = 2447
-set osd_flymode_pos = 409
-set osd_throttle_pos = 2417
-set osd_vtx_channel_pos = 373
-set osd_current_pos = 352
-set osd_mah_drawn_pos = 386
-set osd_pilot_name_pos = 2061
-set osd_warnings_pos = 14666
-set osd_avg_cell_voltage_pos = 2442
-set osd_canvas_width = 30
-set osd_canvas_height = 13
-set osd_menu_background = GRAY
-#$ OPTION END
+  # -- Rate settings --
+  #$ OPTION BEGIN (UNCHECKED): SanderPuh rate profile
+  set rates_type = BETAFLIGHT
+  set roll_rc_rate = 105
+  set pitch_rc_rate = 105
+  set yaw_rc_rate = 100
+  set roll_srate = 64
+  set pitch_srate = 63
+  set yaw_srate = 47
+  #$ OPTION END
+  
+  # -- ELRS Betaflight passthrough -- 
+  #$ OPTION BEGIN (UNCHECKED): Enable ELRS Betaflight passthrough
+  feature -TELEMETRY
+  set serialrx_inverted = off
+  set serialrx_halfduplex = off
+  #$ OPTION END
+#$ OPTION_GROUP END
 
 
 
