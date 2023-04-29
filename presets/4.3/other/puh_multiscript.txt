@@ -27,40 +27,40 @@
 # INCLUDE: presets/4.3/modes/defaults.txt
 # INCLUDE: presets/4.3/rates/defaults.txt
 # INCLUDE: presets/4.3/rc_link/defaults.txt
-# INCLUDE: presets/4.3/tune/defaults.txt
 
 
 
-
-# -- Race tune settings --
-#$ OPTION BEGIN (UNCHECKED): PID tune 5 inch 6s race
-set p_pitch = 37
-set i_pitch = 67
-set d_pitch = 26
-set f_pitch = 19
-
-set p_roll = 35
-set i_roll = 63
-set d_roll = 23
-set f_roll = 19
-
-set p_yaw = 35
-set i_yaw = 63
-set f_yaw = 19
-set d_min_roll = 19
-set d_min_pitch = 21
-
-set simplified_pids_mode = RPY
-set simplified_master_multiplier = 80
-set simplified_d_gain = 80
-set simplified_dmax_gain = 60
-set simplified_feedforward_gain = 20
-#$ OPTION END
+#$ OPTION_GROUP BEGIN: PID Tuning - CHOOSE ONLY ONE!
+  # -- Race tune settings --
+  #$ OPTION BEGIN (UNCHECKED): 5 Inch 6S
+  #$ INCLUDE: presets/4.3/tune/defaults.txt
+  set p_pitch = 37
+  set i_pitch = 67
+  set d_pitch = 26
+  set f_pitch = 19
+  
+  set p_roll = 35
+  set i_roll = 63
+  set d_roll = 23
+  set f_roll = 19
+  
+  set p_yaw = 35
+  set i_yaw = 63
+  set f_yaw = 19
+  set d_min_roll = 19
+  set d_min_pitch = 21
+  
+  set simplified_pids_mode = RPY
+  set simplified_master_multiplier = 80
+  set simplified_d_gain = 80
+  set simplified_dmax_gain = 60
+  set simplified_feedforward_gain = 20
+  #$ OPTION END
 
 
 
 # -- Dshot & RPM filter settings --
-#$ OPTION_GROUP BEGIN: Dshot settings - CHOOSE ONLY ONE!
+#$ OPTION_GROUP BEGIN: Dshot - CHOOSE ONLY ONE!
   #$ OPTION BEGIN (UNCHECKED): Dshot300 (F4 or BMI)
   set motor_pwm_protocol = Dshot300
   #$ OPTION END
@@ -70,8 +70,8 @@ set simplified_feedforward_gain = 20
   #$ OPTION END
 #$ OPTION_GROUP END
 
-#$ OPTION_GROUP BEGIN: RPM Filter settings - CHOOSE ONLY ONE!
-  #$ OPTION BEGIN (UNCHECKED): RPM Filter settings VERY CLEAN
+#$ OPTION_GROUP BEGIN: RPM Filters - CHOOSE ONLY ONE!
+  #$ OPTION BEGIN (UNCHECKED): VERY CLEAN build
   #$ INCLUDE: presets/4.3/filters/defaults.txt
   set dshot_bidir = ON
   set gyro_lpf1_dyn_min_hz = 0
@@ -89,7 +89,7 @@ set simplified_feedforward_gain = 20
   set simplified_dterm_filter_multiplier = 110
   #$ OPTION END
   
-  #$ OPTION BEGIN (UNCHECKED): RPM Filter settings CLEAN
+  #$ OPTION BEGIN (UNCHECKED): CLEAN build
   #$ INCLUDE: presets/4.3/filters/defaults.txt
   set dshot_bidir = ON
   set gyro_lpf1_dyn_min_hz = 0
@@ -106,7 +106,7 @@ set simplified_feedforward_gain = 20
   set dterm_lpf2_static_hz = 157
   #$ OPTION END
 
-  #$ OPTION BEGIN (UNCHECKED): RPM Filter settings NORMAL
+  #$ OPTION BEGIN (UNCHECKED): NORMAL build
   #$ INCLUDE: presets/4.3/filters/defaults.txt
   set dshot_bidir = ON
   set gyro_lpf1_dyn_min_hz = 0
@@ -124,7 +124,7 @@ set simplified_feedforward_gain = 20
 
 
 # -- FC specific group settings --
-#$ OPTION_GROUP BEGIN: FC specific settings
+#$ OPTION_GROUP BEGIN: FC specific
   #$ OPTION BEGIN (UNCHECKED): Foxeer F722 V1
   serial 0 64 115200 57600 0 115200
   set align_board_yaw = 180
@@ -135,7 +135,7 @@ set simplified_feedforward_gain = 20
 
 # -- Miscellanious --
 #$ OPTION_GROUP BEGIN: Miscellanious settings
-  #$ OPTION BEGIN (UNCHECKED): Puh Custom defaults
+  #$ OPTION BEGIN (UNCHECKED): Custom defaults
   set pilot_name = PUH
   set craft_name = 
   set osd_craft_name_pos = 234
@@ -151,7 +151,7 @@ set simplified_feedforward_gain = 20
   #$ OPTION END
  
   # -- AUX switch settings --
-  #$ OPTION BEGIN (UNCHECKED): Aux switch settings
+  #$ OPTION BEGIN (UNCHECKED): Aux switches
   aux 0 0 0 1900 2100 0 0
   aux 1 13 1 1900 2100 0 0
   aux 2 26 0 1900 2100 0 0
@@ -191,7 +191,7 @@ set simplified_feedforward_gain = 20
   #$ OPTION END
  
   # -- RC Link 250hz race settings --
-  #$ OPTION BEGIN (UNCHECKED): Tracer / ELRS 250Hz race
+  #$ OPTION BEGIN (UNCHECKED): RC link Race 250Hz (Tracer / ELRS)
   feature RX_SERIAL
   set serialrx_provider = CRSF
   set feedforward_averaging = 2_POINT
@@ -203,7 +203,7 @@ set simplified_feedforward_gain = 20
   #$ OPTION END
 
   # -- Rate settings --
-  #$ OPTION BEGIN (UNCHECKED): SanderPuh rate profile
+  #$ OPTION BEGIN (UNCHECKED): SanderPuh Rates
   set rates_type = BETAFLIGHT
   set roll_rc_rate = 105
   set pitch_rc_rate = 105
