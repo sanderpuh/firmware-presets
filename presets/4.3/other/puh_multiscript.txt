@@ -128,7 +128,17 @@
   #$ OPTION BEGIN (UNCHECKED): Foxeer F722 V1
   serial 0 64 115200 57600 0 115200
   set align_board_yaw = 180
+  set motor_pwm_protocol = Dshot600
   #$ OPTION END
+  
+  #$ OPTION BEGIN (UNCHECKED): Diatone Mamba F4
+  serial 2 0 115200 57600 0 115200
+  serial 5 64 115200 57600 0 115200
+  set motor_pwm_protocol = Dshot300  
+
+  #$ OPTION END
+
+ 
 #$ OPTION_GROUP END
 
 
@@ -137,7 +147,7 @@
 #$ OPTION_GROUP BEGIN: Miscellanious settings
   #$ OPTION BEGIN (UNCHECKED): Custom defaults
   set pilot_name = PUH
-  set craft_name = 
+  set craft_name = -
   set osd_craft_name_pos = 234
   set small_angle = 180
   set min_check = 1020
