@@ -108,8 +108,15 @@ vtxtable powerlabels 25 100 200 350
   set align_board_yaw = 180
   #$ OPTION END
 
-  #$ OPTION BEGIN (UNCHECKED): Small angle
+  #$ OPTION BEGIN (UNCHECKED): Custom defaults
+  set pilot_name = PUH
   set small_angle = 180
+  set min_check = 1005
+  set max_check = 1995
+  beeper -ON_USB
+  beacon RX_LOST
+  beacon RX_SET
+  set debug_mode = GYRO_SCALED
   #$ OPTION END
 #$ OPTION_GROUP END
 
@@ -159,23 +166,12 @@ set yaw_srate = 47
 # -- AUX switch & adjustment range settings --
 # adjustment range settings TO BE IMPLEMENTED
 #$ OPTION BEGIN (UNCHECKED): Aux switches and radio settings [TO BE ADDED]
-set min_check = 1005
-set max_check = 1995
 # aux switches
 aux 0 0 0 1900 2100 0 0
 aux 1 13 1 1900 2100 0 0
 aux 2 26 0 1900 2100 0 0
 aux 3 35 2 1900 2100 0 0
 aux 4 49 1 1400 1600 0 0
-# aux 0 0 0 900 900 0 0
-# aux 1 0 0 900 900 0 0
-# aux 2 0 0 900 900 0 0
-# aux 3 0 0 900 900 0 0
-# aux 4 0 0 900 900 0 0
-# aux 5 0 0 900 900 0 0
-# aux 6 0 0 900 900 0 0
-# aux 7 0 0 900 900 0 0
-# aux 8 0 0 900 900 0 0
 # ...
 # aux 19 0 0 900 900 0 0
 
@@ -193,13 +189,16 @@ aux 4 49 1 1400 1600 0 0
 #$ OPTION BEGIN (UNCHECKED): Launch Control
 set launch_control_mode = PITCHONLY
 set launch_angle_limit = 70
+set launch_trigger_allow_reset = ON
+set launch_trigger_throttle_percent = 20
+set launch_angle_limit = 70
+set launch_control_gain = 40
 #$ OPTION END
 
 
 
 # -- OSD settings --
 #$ OPTION BEGIN (UNCHECKED): OSD [TO BE ADDED]
-set pilot_name = PUH
 set vcd_video_system = NTSC
 set osd_logo_on_arming = ON
 set osd_tim1 = 2561
