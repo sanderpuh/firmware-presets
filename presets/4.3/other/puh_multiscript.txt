@@ -143,8 +143,8 @@
 
 
 
-# -- Miscellaneious --
-#$ OPTION_GROUP BEGIN: Miscellaneious settings
+# -- Miscellaneous --
+#$ OPTION_GROUP BEGIN: Miscellaneous settings
   #$ OPTION BEGIN (UNCHECKED): Custom defaults
   set pilot_name = PUH
   set craft_name = -
