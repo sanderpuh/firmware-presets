@@ -110,6 +110,8 @@ vtxtable powerlabels 25 100 200 350
 
   #$ OPTION BEGIN (UNCHECKED): Custom defaults
   set pilot_name = PUH
+  set craft_name = 
+  set osd_craft_name_pos = 234
   set small_angle = 180
   set min_check = 1005
   set max_check = 1995
