@@ -158,6 +158,7 @@
   beeper -ON_USB
   beacon RX_LOST
   beacon RX_SET
+  feature -TELEMETRY
   set debug_mode = GYRO_SCALED
   set yaw_motors_reversed = ON
   #$ OPTION END
