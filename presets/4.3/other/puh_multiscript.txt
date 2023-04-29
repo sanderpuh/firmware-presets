@@ -33,7 +33,7 @@
 #$ OPTION_GROUP BEGIN: PID Tuning - CHOOSE ONLY ONE!
   # -- Race tune settings --
   #$ OPTION BEGIN (UNCHECKED): 5 Inch 6S
-  #$ INCLUDE: presets/4.3/tune/defaults.txt
+  #$ INCLUDE: presets/4.4/tune/defaults.txt
   set p_pitch = 37
   set i_pitch = 67
   set d_pitch = 26
