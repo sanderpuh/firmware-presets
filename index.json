@@ -306,34 +306,8 @@
       "priority": 0
     },
     {
-      "fullPath": "presets/4.3/other/puh_full.txt",
-      "hash": "c3078222f6f7a8378943b26b6a8b8e8cb85cf388695c7f133f95fd0a2cca966c",
-      "title": "Puh - Complete drone setup",
-      "firmware_version": [
-        "4.2",
-        "4.3",
-        "4.4"
-      ],
-      "category": "OTHER",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "puh",
-        "analog",
-        "osd",
-        "vtx",
-        "reset",
-        "mode",
-        "modes",
-        "adjustments",
-        "aux",
-        "switch"
-      ],
-      "author": "Sander Puttenstein",
-      "priority": 0
-    },
-    {
       "fullPath": "presets/4.3/other/puh_multiscript.txt",
-      "hash": "67bcb15e6d5a5f29e94b60aad3a1977e1e290619eb42fad3cd7acb2879496b23",
+      "hash": "b0b2bc844e229f2881cd5f905ae71e23f72d0b87e8794fa4a127b0a8444e53f6",
       "title": "SanderPuh - Multischript Racing Setup BF4.4",
       "firmware_version": [
         "4.2",

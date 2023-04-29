@@ -103,8 +103,13 @@ vtxtable powerlabels 25 100 200 350
   set motor_pwm_protocol = Dshot600
   #$ OPTION END
 
-  #$ OPTION BEGIN (UNCHECKED): Rotate Foxeer F722 V1 [TO BE ADDED]
-  
+  #$ OPTION BEGIN (UNCHECKED): Foxeer F722 V1 [TO BE ADDED]
+  serial 0 64 115200 57600 0 115200
+  set align_board_yaw = 180
+  #$ OPTION END
+
+  #$ OPTION BEGIN (UNCHECKED): Small angle
+  set small_angle = 180
   #$ OPTION END
 #$ OPTION_GROUP END
 
@@ -139,16 +144,29 @@ set rc_smoothing_auto_factor_throttle = 25
 
 
 # -- Rate settings --
-#$ OPTION BEGIN (UNCHECKED): Rate profile [TO BE ADDED]
-
+#$ OPTION BEGIN (UNCHECKED): Rate profile
+set rates_type = BETAFLIGHT
+set roll_rc_rate = 105
+set pitch_rc_rate = 105
+set yaw_rc_rate = 100
+set roll_srate = 64
+set pitch_srate = 63
+set yaw_srate = 47
 #$ OPTION END
 
 
 
 # -- AUX switch & adjustment range settings --
 # adjustment range settings TO BE IMPLEMENTED
-#$ OPTION BEGIN (UNCHECKED): Aux switches [TO BE ADDED]
+#$ OPTION BEGIN (UNCHECKED): Aux switches and radio settings [TO BE ADDED]
+set min_check = 1005
+set max_check = 1995
 # aux switches
+aux 0 0 0 1900 2100 0 0
+aux 1 13 1 1900 2100 0 0
+aux 2 26 0 1900 2100 0 0
+aux 3 35 2 1900 2100 0 0
+aux 4 49 1 1400 1600 0 0
 # aux 0 0 0 900 900 0 0
 # aux 1 0 0 900 900 0 0
 # aux 2 0 0 900 900 0 0
@@ -172,17 +190,33 @@ set rc_smoothing_auto_factor_throttle = 25
 
 
 # -- Launch control settings --
-#$ OPTION BEGIN (UNCHECKED): Launch Control [TO BE ADDED]
-
+#$ OPTION BEGIN (UNCHECKED): Launch Control
+set launch_control_mode = PITCHONLY
+set launch_angle_limit = 70
 #$ OPTION END
 
 
 
 # -- OSD settings --
 #$ OPTION BEGIN (UNCHECKED): OSD [TO BE ADDED]
+set pilot_name = PUH
+set vcd_video_system = NTSC
+set osd_logo_on_arming = ON
+set osd_tim1 = 2561
+set osd_vbat_pos = 393
+set osd_link_quality_pos = 2410
+set osd_tim_2_pos = 2447
+set osd_flymode_pos = 409
+set osd_throttle_pos = 2417
+set osd_vtx_channel_pos = 373
+set osd_current_pos = 352
+set osd_mah_drawn_pos = 386
+set osd_pilot_name_pos = 2061
+set osd_warnings_pos = 14666
+set osd_avg_cell_voltage_pos = 2442
+set osd_canvas_width = 30
+set osd_canvas_height = 13
 set osd_menu_background = GRAY
-feature -TELEMETRY
-set serialrx_inverted = off
 #$ OPTION END
 
 
