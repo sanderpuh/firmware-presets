@@ -118,6 +118,12 @@ vtxtable powerlabels 25 100 200 350
   beacon RX_SET
   set debug_mode = GYRO_SCALED
   #$ OPTION END
+  
+  #$ OPTION BEGIN (UNCHECKED): ELRS Betaflight Passthrough
+  feature -TELEMETRY
+  set serialrx_inverted = off
+  set serialrx_halfduplex = off
+  #$ OPTION END
 #$ OPTION_GROUP END
 
 
@@ -219,9 +225,3 @@ set osd_menu_background = GRAY
 #$ OPTION END
 
 
-# -- ELRS Betaflight Passthrough settings --
-#$ OPTION BEGIN (UNCHECKED): ELRS Betaflight Passthrough
-feature -TELEMETRY
-set serialrx_inverted = off
-set serialrx_halfduplex = off
-#$ OPTION END
