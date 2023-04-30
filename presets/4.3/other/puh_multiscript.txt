@@ -47,20 +47,18 @@
   set simplified_d_gain = 70
   set simplified_dmax_gain = 40
   set simplified_pitch_d_gain = 110
-
   #$ OPTION END
 
 
 
 # -- Dshot & RPM filter settings --
 #$ OPTION_GROUP BEGIN: Dshot - CHOOSE ONLY ONE!
+#$ INCLUDE_WARNING: misc/warnings/en/dshot.txt
   #$ OPTION BEGIN (UNCHECKED): Dshot300 (F4 or BMI)
-  #$ INCLUDE_WARNING: misc/warnings/en/dshot.txt
   set motor_pwm_protocol = Dshot300
   #$ OPTION END
 
   #$ OPTION BEGIN (UNCHECKED): Dshot600 (F7)
-  #$ INCLUDE_WARNING: misc/warnings/en/dshot.txt
   set motor_pwm_protocol = Dshot600
   #$ OPTION END
 #$ OPTION_GROUP END
