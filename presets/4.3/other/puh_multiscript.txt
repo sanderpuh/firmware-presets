@@ -48,6 +48,7 @@
   set simplified_dmax_gain = 40
   set simplified_pitch_d_gain = 110
   #$ OPTION END
+#$ OPTION_GROUP END
 
 
 
