@@ -166,11 +166,16 @@
   aux 1 13 1 1900 2100 0 0
   aux 2 26 0 1900 2100 0 0
   aux 3 35 2 1900 2100 0 0
+  #$ OPTION END
+
+  #$ OPTION BEGIN (UNCHECKED): Launch Control switch
   aux 4 49 1 1400 1600 0 0
   #$ OPTION END
+  
 
   # -- Launch control settings --
   #$ OPTION BEGIN (UNCHECKED): Launch Control
+  aux 4 49 1 1400 1600 0 0
   set launch_control_mode = PITCHONLY
   set launch_angle_limit = 70
   set launch_trigger_allow_reset = ON
