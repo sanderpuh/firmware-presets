@@ -1,0 +1,49 @@
+#$ TITLE:  SanderPuh Race 6s 5"
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: TUNE
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: 6x, race, tune, pid, puh, 5 inch, 5", 2023, multigp
+#$ AUTHOR: Sander Puttenstein
+#$ DESCRIPTION:
+#$ DESCRIPTION: This is a 6S 5'' racing tune by Sander Puttenstein from 2023
+#$ DESCRIPTION:
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION:
+#$ DESCRIPTION: This tune is pretty aggressive and there are chances it's not going to work well on your average drone.
+#$ DESCRIPTION: <br>**YOU HAVE TO USE RPM FILTERING WITH THIS TUNE!**
+#$ DESCRIPTION: <br>Failure to do so might result in fire 🔥
+#$ DESCRIPTION:
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION: Use DSHOT300 for FCs with BMI gyro, and for STM32F4 chips. This tune is provided as-is from my drone diff.
+#$ DESCRIPTION:
+
+#$ INCLUDE_WARNING: misc/warnings/en/dshot.txt
+
+# -- Race tune settings --
+#$ INCLUDE: presets/4.3/tune/defaults.txt
+set p_pitch = 37
+set i_pitch = 50
+set d_pitch = 23
+set f_pitch = 99
+
+set p_roll = 35
+set i_roll = 47
+set d_roll = 19
+set f_roll = 95
+
+set p_yaw = 35
+set i_yaw = 47
+set f_yaw = 95
+set d_min_roll = 16
+set d_min_pitch = 20
+
+set simplified_pids_mode = RPY
+set simplified_master_multiplier = 80
+set simplified_i_gain = 75
+set simplified_d_gain = 70
+set simplified_dmax_gain = 40
+set simplified_pitch_d_gain = 110
+
+#$ OPTION BEGIN (UNCHECKED): Dshot300 (F4 or BMI)
+    set motor_pwm_protocol = Dshot300
+#$ OPTION END

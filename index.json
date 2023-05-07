@@ -157,6 +157,10 @@
       "sugarK"
     ],
     "keywords": [
+      "2023",
+      "5 inch",
+      "5\"",
+      "6x",
       "actual",
       "adjustments",
       "analog",
@@ -179,12 +183,14 @@
       "modes",
       "MSP",
       "MSP VTX",
+      "multigp",
       "OpenVTx",
       "OSD",
       "partial",
       "Passthrough",
       "pid",
       "puh",
+      "race",
       "race v1",
       "race v2",
       "rates",
@@ -307,7 +313,7 @@
     },
     {
       "fullPath": "presets/4.3/other/puh_multiscript.txt",
-      "hash": "504fdb0a89b010af2f862809ef6aaa2cf7f22f6d2ec1915079193c93fe34f0fa",
+      "hash": "e6c0550a4113166b0bdcdaa72ea6b74c834ed6a53d76e02f3dd18e9b25860ca7",
       "title": "SanderPuh - Multiscript Racing Setup BF4.4",
       "firmware_version": [
         "4.2",
@@ -427,6 +433,29 @@
         "filters"
       ],
       "author": "Betaflight",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.3/tune/puh_5inch_race.txt",
+      "hash": "98237b8987990777bbc71158dc81c37c377cf4b53c821b870c42b973b15d6dba",
+      "title": "SanderPuh Race 6s 5\"",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "6x",
+        "race",
+        "tune",
+        "pid",
+        "puh",
+        "5 inch",
+        "5\"",
+        "2023",
+        "multigp"
+      ],
+      "author": "Sander Puttenstein",
       "priority": 1000000000000
     },
     {
@@ -581,6 +610,29 @@
         "filters"
       ],
       "author": "Betaflight",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.4/tune/puh_5inch_race.txt",
+      "hash": "7aeab2bdd90b16ad61bb0dce01ef7697326ff3421362d3266dfef14d0a4fe6f2",
+      "title": "SanderPuh Race 6s 5\"",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "6x",
+        "race",
+        "tune",
+        "pid",
+        "puh",
+        "5 inch",
+        "5\"",
+        "2023",
+        "multigp"
+      ],
+      "author": "Sander Puttenstein",
       "priority": 1000000000000
     },
     {
