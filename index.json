@@ -160,7 +160,7 @@
       "2023",
       "5 inch",
       "5\"",
-      "6x",
+      "6s",
       "actual",
       "adjustments",
       "analog",
@@ -437,7 +437,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/puh_5inch_race.txt",
-      "hash": "98237b8987990777bbc71158dc81c37c377cf4b53c821b870c42b973b15d6dba",
+      "hash": "19e8bf8a38df91f45b3ca3914b902abd58f6f3f9916cf17a5b0ef56e6c2a5e11",
       "title": "SanderPuh Race 6s 5\"",
       "firmware_version": [
         "4.3"
@@ -445,7 +445,7 @@
       "category": "TUNE",
       "status": "EXPERIMENTAL",
       "keywords": [
-        "6x",
+        "6s",
         "race",
         "tune",
         "pid",
@@ -614,7 +614,7 @@
     },
     {
       "fullPath": "presets/4.4/tune/puh_5inch_race.txt",
-      "hash": "7aeab2bdd90b16ad61bb0dce01ef7697326ff3421362d3266dfef14d0a4fe6f2",
+      "hash": "5c7b000e9d43b6b2f0f929470750903d0d535a3884fb1b49f70407af8e353814",
       "title": "SanderPuh Race 6s 5\"",
       "firmware_version": [
         "4.4"
@@ -622,7 +622,7 @@
       "category": "TUNE",
       "status": "EXPERIMENTAL",
       "keywords": [
-        "6x",
+        "6s",
         "race",
         "tune",
         "pid",

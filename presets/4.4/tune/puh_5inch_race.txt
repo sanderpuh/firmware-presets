@@ -2,7 +2,7 @@
 #$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: TUNE
 #$ STATUS: EXPERIMENTAL
-#$ KEYWORDS: 6x, race, tune, pid, puh, 5 inch, 5", 2023, multigp
+#$ KEYWORDS: 6s, race, tune, pid, puh, 5 inch, 5", 2023, multigp
 #$ AUTHOR: Sander Puttenstein
 #$ DESCRIPTION:
 #$ DESCRIPTION: This is a 6S 5'' racing tune by Sander Puttenstein from 2023
