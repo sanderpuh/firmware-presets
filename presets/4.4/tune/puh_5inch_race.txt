@@ -7,13 +7,12 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: This is a 6S 5'' racing tune by Sander Puttenstein from 2023
 #$ DESCRIPTION:
-#$ DESCRIPTION: <br>
 #$ DESCRIPTION:
 #$ DESCRIPTION: This tune is pretty aggressive and there are chances it's not going to work well on your average drone.
-#$ DESCRIPTION: <br>**YOU HAVE TO USE RPM FILTERING WITH THIS TUNE!**
-#$ DESCRIPTION: <br>Failure to do so might result in fire 🔥
+#$ DESCRIPTION: **YOU HAVE TO USE RPM FILTERING WITH THIS TUNE!**
+#$ DESCRIPTION: Failure to do so might result in fire 🔥
 #$ DESCRIPTION:
-#$ DESCRIPTION: <br>
+#$ DESCRIPTION: 
 #$ DESCRIPTION: Use DSHOT300 for FCs with BMI gyro, and for STM32F4 chips. This tune is provided as-is from my drone diff.
 #$ DESCRIPTION:
 

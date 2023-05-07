@@ -437,7 +437,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/puh_5inch_race.txt",
-      "hash": "19e8bf8a38df91f45b3ca3914b902abd58f6f3f9916cf17a5b0ef56e6c2a5e11",
+      "hash": "8413d1a6cc2d889707ebed014d007764039adec01609f019d80152c949b57a7f",
       "title": "SanderPuh Race 6s 5\"",
       "firmware_version": [
         "4.3"
@@ -614,7 +614,7 @@
     },
     {
       "fullPath": "presets/4.4/tune/puh_5inch_race.txt",
-      "hash": "5c7b000e9d43b6b2f0f929470750903d0d535a3884fb1b49f70407af8e353814",
+      "hash": "c0f3676bedc5e8c7f1c9f6e20126ca7aa184516c3128612dfde8737967fac1a7",
       "title": "SanderPuh Race 6s 5\"",
       "firmware_version": [
         "4.4"
