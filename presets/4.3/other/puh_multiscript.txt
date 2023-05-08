@@ -165,9 +165,10 @@
   #$ OPTION BEGIN (UNCHECKED): Aux switches
   #$ INCLUDE: presets/4.3/modes/defaults.txt
   aux 0 0 0 1900 2100 0 0
-  aux 1 13 1 1900 2100 0 0
+  aux 1 13 3 1900 2100 0 0
   aux 2 26 0 1900 2100 0 0
   aux 3 35 2 1900 2100 0 0
+  aux 4 49 1 1400 1600 0 0
   #$ OPTION END
 
   #$ OPTION BEGIN (UNCHECKED): Launch Control switch
