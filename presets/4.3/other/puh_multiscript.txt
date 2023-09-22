@@ -109,7 +109,7 @@
   #$ OPTION BEGIN (UNCHECKED): NORMAL build
   #$ INCLUDE_WARNING: misc/warnings/en/rpm_filters.txt
   #$ INCLUDE: presets/4.3/filters/defaults.txt
-  set dshot_bidir = ON
+0  set dshot_bidir = ON
   set gyro_lpf1_dyn_min_hz = 0
   set gyro_lpf1_dyn_max_hz = 500
   set gyro_lpf1_static_hz = 0
@@ -243,7 +243,7 @@
   set extra_armed_warning = LETS GO
   set extra_fc_hot_warning = COOKING THE FC
   set extra_low_battery_warning = KEEP PUSHING 
-  set extra_land_now_warning = NOT AGAIN BELOW 3V PLEASE :(
+  set extra_land_now_warning = NOT AGAIN 3V PLS
   
   # -- Kaack stats nosave --
   #$ OPTION BEGIN (UNCHECKED): Kaack Stats Nosave
