@@ -66,8 +66,8 @@ set rpm_filter_fade_range_hz = 100
 set rpm_filter_weights = 100,50,50
 
 # -- Misc --
-??? set yaw_spin_recovery = AUTO 
-??? set thrust_linear = 0
+set yaw_spin_recovery = AUTO 
+set thrust_linear = 0
 set throttle_boost = 2
 set small_angle = 180
 set min_check = 1005
@@ -84,7 +84,6 @@ set pidsum_limit_yaw = 1000
 
 
 # -- PID Values --
-??? set simplified_pids_mode = RP
 set simplified_i_gain = 65
 set simplified_d_gain = 70
 set simplified_pi_gain = 90
@@ -100,16 +99,23 @@ set feedforward_max_rate_limit = 100
 set tpa_rate = 70
 set tpa_breakpoint = 1250
 
+#$ OPTION BEGIN (UNCHECKED): Simplified PIDS mode RP (from Karate tune)
+    set simplified_pids_mode = RP
+#$ OPTION END
+
 #$ OPTION BEGIN (CHECKED): Dshot600
     set dshot_bidir = ON
-    /// set dshot_bitbang = ON
+
     set motor_pwm_protocol = DSHOT600
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Dshot300
     set dshot_bidir = ON
-    /// set dshot_bitbang = ON
     set motor_pwm_protocol = Dshot300
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): DShot bitbang ON (from Marlin tune)
+    set dshot_bitbang = ON
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Custom Dynamic Idle
