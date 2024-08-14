@@ -65,15 +65,20 @@ set rpm_filter_weights = 100,50,50
 # -- Misc --
 set yaw_spin_recovery = AUTO 
 set thrust_linear = 0
-set throttle_boost = 2
+# set throttle_boost = 2
+set throttle_boost = 3
 set small_angle = 180
 set min_check = 1005
 set max_check = 1995
 set min_throttle = 1020
 
+# -- Antigravity --
+# set anti_gravity_gain = 90
+set anti_gravity_gain = 90
 
-# -- iTerm  --
-set iterm_relax_cutoff = 30
+# -- iTerm --
+# set iterm_relax_cutoff = 30
+set iterm_relax_cutoff = 20
 
 # -- PIDsum Limits --
 set iterm_limit = 500
@@ -85,7 +90,8 @@ set simplified_i_gain = 65
 set simplified_d_gain = 70
 set simplified_pi_gain = 90
 set simplified_dmax_gain = 200
-set simplified_feedforward_gain = 105
+# set simplified_feedforward_gain = 105
+set simplified_feedforward_gain = 110
 set simplified_pitch_pi_gain = 105
 simplified_tuning apply
 
@@ -155,6 +161,28 @@ set tpa_breakpoint = 1250
         set serialrx_provider = CRSF
 
         #$ INCLUDE: presets/4.3/rc_link/generic/500hz_race.txt
+
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): ELRS 500Hz with extra spice (jitter_factor = 0)
+        # ERLS 500Hz
+        
+        feature RX_SERIAL
+        set serialrx_provider = CRSF
+
+        #$ INCLUDE: presets/4.3/rc_link/generic/500hz_race.txt
+        set feedforward_jitter_factor = 0
+
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): ELRS 500Hz with lower spice (jitter_factor = 4)
+        # ERLS 500Hz
+        
+        feature RX_SERIAL
+        set serialrx_provider = CRSF
+
+        #$ INCLUDE: presets/4.3/rc_link/generic/500hz_race.txt
+        set feedforward_jitter_factor = 4
 
     #$ OPTION END
     
