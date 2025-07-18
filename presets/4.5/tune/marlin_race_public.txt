@@ -91,6 +91,10 @@ set simplified_pitch_pi_gain = 105
 set tpa_rate = 70
 set tpa_breakpoint = 1250
 
+# -- Dynamic Idle --
+set dyn_idle_min_rpm = 40
+set dyn_idle_p_gain = 35
+
 # --- CUSTOM OPTIONS ---
 #$ OPTION_GROUP BEGIN: Custom Options
     
