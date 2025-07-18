@@ -439,6 +439,7 @@
       "lr5",
       "mamba",
       "Marek",
+      "marlin",
       "mck",
       "meteor",
       "MGP",
@@ -7334,7 +7335,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/drippuh_race.txt",
-      "hash": "4210ea7814732b6136fa6d0e775b11d7844678217b7e7ca557458b13fd78e12c",
+      "hash": "0278f18fa5b25b14d366a531a594923b1c955d45b289a8e567ad1b745309d3e4",
       "title": "DRIPPUH Race  5\"",
       "firmware_version": [
         "4.5"
@@ -7570,6 +7571,31 @@
         "tinyTrainer"
       ],
       "author": "sugarK",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.5/tune/marlin_race_public.txt",
+      "hash": "f3426c51306a77fc255f83691b0046e82736594f80e14e48b78e786a823b7fc5",
+      "title": "MarlinFPV Race Public  5\"",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "DRIPPUH",
+        "race",
+        "5 inch",
+        "5\"",
+        "sanderpuh",
+        "puh",
+        "ultralite",
+        "lightweight",
+        "nano",
+        "2024 sliders",
+        "marlin"
+      ],
+      "author": "SanderPuh",
       "priority": 1000000000000
     },
     {
