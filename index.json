@@ -7335,13 +7335,13 @@
     },
     {
       "fullPath": "presets/4.5/tune/drippuh_race.txt",
-      "hash": "0278f18fa5b25b14d366a531a594923b1c955d45b289a8e567ad1b745309d3e4",
+      "hash": "9461dff44a276cb8dfaa2f8167102892508ad148718d6d1a97e4b1dd3f43372b",
       "title": "DRIPPUH Race  5\"",
       "firmware_version": [
         "4.5"
       ],
       "category": "TUNE",
-      "status": "OFFICIAL",
+      "status": "EXPERIMENTAL",
       "keywords": [
         "DRIPPUH",
         "race",
