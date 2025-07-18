@@ -7575,7 +7575,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/marlin_race_public.txt",
-      "hash": "f3426c51306a77fc255f83691b0046e82736594f80e14e48b78e786a823b7fc5",
+      "hash": "a41c259b735022914df0cc2bb75afdda5bd80f808338cb3d02d6d053d2172a0d",
       "title": "MarlinFPV Race Public  5\"",
       "firmware_version": [
         "4.5"
