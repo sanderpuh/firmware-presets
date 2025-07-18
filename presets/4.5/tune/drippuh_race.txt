@@ -43,42 +43,100 @@
 
 # -- Loading of default Tune and Filters finished --
 # -- Preset DRIPPUH tune starts here --
-# -- Gyro Lowpass Filters --
-set gyro_lpf1_static_hz = 0
-set gyro_lpf1_dyn_min_hz = 500
-set gyro_lpf1_dyn_max_hz = 1000
-set simplified_gyro_filter = OFF
 
-# -- Gyro Dynamic Notches --
-set dyn_notch_count = 1
-set dyn_notch_q = 500
-set dyn_notch_min_hz = 125
-set dyn_notch_max_hz = 650
 
-# -- Dterm Filtering --
-set dterm_lpf1_dyn_expo = 10
+# -- Tune --
+#$ OPTION_GROUP BEGIN: Tune options
+    #$ OPTION BEGIN (CHECKED): Current PUH tune
+        # -- Gyro Lowpass Filters --
+        set gyro_lpf1_static_hz = 0
+        set gyro_lpf1_dyn_min_hz = 500
+        set gyro_lpf1_dyn_max_hz = 1000
+        set simplified_gyro_filter = OFF
+        
+        # -- Gyro Dynamic Notches --
+        set dyn_notch_count = 1
+        set dyn_notch_q = 500
+        set dyn_notch_min_hz = 125
+        set dyn_notch_max_hz = 650
+        
+        # -- Dterm Filtering --
+        set dterm_lpf1_dyn_expo = 10
+        
+        # -- RPM Filtering --
+        set dshot_bidir = ON
+        set rpm_filter_fade_range_hz = 100
+        set rpm_filter_weights = 100,50,50
+        
+        # -- PID Values --
+        set simplified_i_gain = 65
+        set simplified_d_gain = 70
+        set simplified_pi_gain = 90
+        set simplified_dmax_gain = 200
+        set simplified_feedforward_gain = 110
+        set simplified_pitch_pi_gain = 105
+        simplified_tuning apply
+        
+        # -- Feedforward --
+        set feedforward_max_rate_limit = 100
+        
+        # -- TPA --
+        set tpa_rate = 70
+        set tpa_breakpoint = 1250
+    #$ OPTION END
 
-# -- RPM Filtering --
-set dshot_bidir = ON
-set rpm_filter_fade_range_hz = 100
-set rpm_filter_weights = 100,50,50
+    #$ OPTION BEGIN (UNCHECKED): Old PUH tune
+        # -- Gyro Lowpass Filters --
+        set gyro_lpf1_static_hz = 0
+        set gyro_lpf1_dyn_min_hz = 500
+        set gyro_lpf1_dyn_max_hz = 1000
+        set simplified_gyro_filter = OFF
+        
+        # -- Gyro Dynamic Notches --
+        set dyn_notch_count = 2
+        set dyn_notch_q = 450
+        set dyn_notch_min_hz = 125
+        set dyn_notch_max_hz = 650
+        
+        # -- Dterm Filtering --
+        set dterm_lpf1_dyn_expo = 7
+        
+        # -- RPM Filtering --
+        set rpm_filter_fade_range_hz = 100
 
-# -- PID Values --
-set simplified_i_gain = 65
-set simplified_d_gain = 70
-set simplified_pi_gain = 90
-set simplified_dmax_gain = 200
-# set simplified_feedforward_gain = 105
-set simplified_feedforward_gain = 110
-set simplified_pitch_pi_gain = 105
-simplified_tuning apply
+        # -- PID Values --
+        set simplified_d_gain = 70
+        set simplified_pi_gain = 85
+        set simplified_feedforward_gain = 105
+        set simplified_dmax_gain = 200
+        set simplified_i_gain = 120
+        set simplified_pitch_pi_gain = 105
+        simplified_tuning apply
+        
+        # -- Feedforward --
+        set feedforward_max_rate_limit = 100
+        
+        # -- TPA --
+        set tpa_rate = 70
+        set tpa_breakpoint = 1250
+    #$ OPTION END
+#$ OPTION_GROUP END
 
-# -- Feedforward --
-set feedforward_max_rate_limit = 100
 
-# -- TPA --
-set tpa_rate = 70
-set tpa_breakpoint = 1250
+# --- Dshot ---
+#$ OPTION_GROUP BEGIN: Dshot - only choose ONE!
+    #$ OPTION BEGIN (CHECKED): Dshot600
+        set dshot_bidir = ON
+    
+        set motor_pwm_protocol = DSHOT600
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): Dshot300
+        set dshot_bidir = ON
+        set motor_pwm_protocol = Dshot300
+    #$ OPTION END
+#$ OPTION_GROUP END
+
 
 # --- CUSTOM OPTIONS ---
 #$ OPTION_GROUP BEGIN: Custom Options
@@ -118,20 +176,6 @@ set tpa_breakpoint = 1250
     #$ OPTION BEGIN (UNCHECKED): Bosch (BMI) gyro - EXPERIMENTAL
         set gyro_lpf1_dyn_min_hz = 0
         set gyro_lpf1_dyn_max_hz = 0
-    #$ OPTION END
-#$ OPTION_GROUP END
-
-# --- Dshot ---
-#$ OPTION_GROUP BEGIN: Dshot - only choose ONE!
-    #$ OPTION BEGIN (CHECKED): Dshot600
-        set dshot_bidir = ON
-    
-        set motor_pwm_protocol = DSHOT600
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): Dshot300
-        set dshot_bidir = ON
-        set motor_pwm_protocol = Dshot300
     #$ OPTION END
 #$ OPTION_GROUP END
 
@@ -214,6 +258,7 @@ set tpa_breakpoint = 1250
         set feedforward_jitter_factor = 0
     #$ OPTION END
 #$ OPTION_GROUP END
+
 
 # --- RATES ---
 #$ OPTION_GROUP BEGIN: Optional Rates
