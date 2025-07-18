@@ -110,17 +110,6 @@ set tpa_breakpoint = 1250
     set dshot_bitbang = ON
 #$ OPTION END
 
-#$ OPTION BEGIN (CHECKED): Dshot600
-    set dshot_bidir = ON
-
-    set motor_pwm_protocol = DSHOT600
-#$ OPTION END
-
-#$ OPTION BEGIN (UNCHECKED): Dshot300
-    set dshot_bidir = ON
-    set motor_pwm_protocol = Dshot300
-#$ OPTION END
-
 #$ OPTION BEGIN (UNCHECKED): Custom Dynamic Idle (from Karate tune)
     #dynamic idle for 4s 2850-3000kv
     set dyn_idle_min_rpm = 45
@@ -139,6 +128,20 @@ set tpa_breakpoint = 1250
     set gyro_lpf1_dyn_min_hz = 0
     set gyro_lpf1_dyn_max_hz = 0
 #$ OPTION END
+
+# --- Dshot ---
+#$ OPTION_GROUP BEGIN: Dshot - only choose ONE!
+    #$ OPTION BEGIN (CHECKED): Dshot600
+        set dshot_bidir = ON
+    
+        set motor_pwm_protocol = DSHOT600
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): Dshot300
+        set dshot_bidir = ON
+        set motor_pwm_protocol = Dshot300
+    #$ OPTION END
+#$ OPTION_GROUP END
 
 
 # --- RC LINK ---
