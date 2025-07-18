@@ -64,7 +64,6 @@
         set dterm_lpf1_dyn_expo = 10
         
         # -- RPM Filtering --
-        set dshot_bidir = ON
         set rpm_filter_fade_range_hz = 100
         set rpm_filter_weights = 100,50,50
         
@@ -125,7 +124,7 @@
 
 # --- Dshot ---
 #$ OPTION_GROUP BEGIN: Dshot - only choose ONE!
-    #$ OPTION BEGIN (CHECKED): Dshot600
+    #$ OPTION BEGIN (UNCHECKED): Dshot600
         set dshot_bidir = ON
     
         set motor_pwm_protocol = DSHOT600
