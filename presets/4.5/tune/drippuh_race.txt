@@ -8,11 +8,11 @@
 #$ PARSER: MARKED
 
 #$ DESCRIPTION:
-#$ DESCRIPTION: <img src="https://user-images.githubusercontent.com/19867640/176932353-fdc42c5e-33ae-42d7-b34c-e981b6cffa3f.png" style="max-width: 100%; margin-left: auto; margin-right: auto; display: block;"/>
+#$ DESCRIPTION: <img src="https://droneshop.nl/pub/media/catalog/product/cache/57e05a978a5497b203ff83c2f6f349f4/d/r/drippuh-frame-9.jpg" style="max-width: 100%; margin-left: auto; margin-right: auto; display: block;"/>
 #$ DESCRIPTION: <h1>DRIPPUH race</h1>
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
-#$ DESCRIPTION: This racing tune was developed by Marlin FPV to suit my new DRIPPUH 5" racer project. [DRIPPUH](https://rotorbuilds.com/build/29775)
+#$ DESCRIPTION: This racing tune was developed by Marlin FPV to suit my new DRIPPUH 5" racer project. [DRIPPUH](https://droneshop.nl/drippuh-drone-racing-frame)
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
 #$ DESCRIPTION: This tune should be used with 24khz low and 48khz high PWM settings or firmware and it 'SHOULD' work with other ultralite 5" frames.
