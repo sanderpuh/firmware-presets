@@ -68,11 +68,11 @@
         set rpm_filter_weights = 100,50,50
         
         # -- PID Values --
-        set simplified_i_gain = 65
         set simplified_d_gain = 70
         set simplified_pi_gain = 90
-        set simplified_dmax_gain = 200
         set simplified_feedforward_gain = 110
+        set simplified_dmax_gain = 200
+        set simplified_i_gain = 65
         set simplified_pitch_pi_gain = 105
         simplified_tuning apply
         
