@@ -123,10 +123,9 @@
 
 
 # --- Dshot ---
-#$ OPTION_GROUP BEGIN: Dshot - only choose ONE!
+#$ OPTION_GROUP BEGIN: Dshot - MUST(!) choose ONE!
     #$ OPTION BEGIN (UNCHECKED): Dshot600
         set dshot_bidir = ON
-    
         set motor_pwm_protocol = DSHOT600
     #$ OPTION END
     
