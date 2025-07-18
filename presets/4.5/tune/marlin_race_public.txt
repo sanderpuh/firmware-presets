@@ -41,7 +41,8 @@
 #$ INCLUDE: presets/4.5/filters/defaults.txt
 
 
-
+# -- Loading of default Tune and Filters finished --
+# -- Preset tune starts here --
 # -- Gyro Lowpass Filters --
 set gyro_lpf1_static_hz = 0
 set gyro_lpf1_dyn_min_hz = 0
