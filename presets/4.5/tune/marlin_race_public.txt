@@ -85,6 +85,22 @@ set tpa_breakpoint = 1250
 set dyn_idle_min_rpm = 40
 set dyn_idle_p_gain = 35
 
+
+# --- Dshot ---
+#$ OPTION_GROUP BEGIN: Dshot - MUST(!) choose ONE!
+    #$ OPTION BEGIN (CHECKED): Dshot600
+        set dshot_bidir = ON
+    
+        set motor_pwm_protocol = DSHOT600
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): Dshot300
+        set dshot_bidir = ON
+        set motor_pwm_protocol = Dshot300
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+
 # --- CUSTOM OPTIONS ---
 #$ OPTION_GROUP BEGIN: Custom Options
     
@@ -120,20 +136,6 @@ set dyn_idle_p_gain = 35
     #$ OPTION BEGIN (UNCHECKED): Bosch (BMI) gyro - EXPERIMENTAL
         set gyro_lpf1_dyn_min_hz = 0
         set gyro_lpf1_dyn_max_hz = 0
-    #$ OPTION END
-#$ OPTION_GROUP END
-
-# --- Dshot ---
-#$ OPTION_GROUP BEGIN: Dshot - only choose ONE!
-    #$ OPTION BEGIN (CHECKED): Dshot600
-        set dshot_bidir = ON
-    
-        set motor_pwm_protocol = DSHOT600
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): Dshot300
-        set dshot_bidir = ON
-        set motor_pwm_protocol = Dshot300
     #$ OPTION END
 #$ OPTION_GROUP END
 
