@@ -231,6 +231,5 @@ set tpa_breakpoint = 1250
         set roll_srate = 70
         set pitch_srate = 70
         set yaw_srate = 70
-        #$ OPTION END
     #$ OPTION END
 #$ OPTION_GROUP END
