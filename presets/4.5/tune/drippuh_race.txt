@@ -1,7 +1,7 @@
 #$ TITLE: DRIPPUH Race  5"
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: TUNE
-#$ STATUS:  OFFICIAL
+#$ STATUS:  EXPERIMENTAL
 #$ KEYWORDS: DRIPPUH, race, 5 inch, 5", sanderpuh, puh, ultralite, lightweight, nano, 2024 sliders
 #$ AUTHOR: SanderPuh
 
