@@ -62,29 +62,6 @@ set dshot_bidir = ON
 set rpm_filter_fade_range_hz = 100
 set rpm_filter_weights = 100,50,50
 
-# -- Misc --
-set yaw_spin_recovery = AUTO 
-set thrust_linear = 0
-# set throttle_boost = 2
-set throttle_boost = 3
-set small_angle = 180
-set min_check = 1005
-set max_check = 1995
-set min_throttle = 1020
-
-# -- Antigravity --
-# set anti_gravity_gain = 90
-set anti_gravity_gain = 90
-
-# -- iTerm --
-# set iterm_relax_cutoff = 30
-set iterm_relax_cutoff = 20
-
-# -- PIDsum Limits --
-set iterm_limit = 500
-set pidsum_limit_yaw = 1000
-
-
 # -- PID Values --
 set simplified_i_gain = 65
 set simplified_d_gain = 70
@@ -104,6 +81,31 @@ set tpa_breakpoint = 1250
 
 # --- CUSTOM OPTIONS ---
 #$ OPTION_GROUP BEGIN: Custom Options
+
+    #$ OPTION BEGIN (UNCHECKED): Miscellaneous PUH settings
+        # -- Misc --
+        set yaw_spin_recovery = AUTO 
+        set thrust_linear = 0
+        # set throttle_boost = 2
+        set throttle_boost = 3
+        set small_angle = 180
+        set min_check = 1005
+        set max_check = 1995
+        set min_throttle = 1020
+        
+        # -- Antigravity --
+        # set anti_gravity_gain = 90
+        set anti_gravity_gain = 90
+        
+        # -- iTerm --
+        # set iterm_relax_cutoff = 30
+        set iterm_relax_cutoff = 20
+        
+        # -- PIDsum Limits --
+        set iterm_limit = 500
+        set pidsum_limit_yaw = 1000
+    #$ OPTION END
+
     #$ OPTION BEGIN (UNCHECKED): Vbat Sag Compensation
         set vbat_sag_compensation = 100
     #$ OPTION END
