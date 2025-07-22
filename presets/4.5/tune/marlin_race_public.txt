@@ -47,7 +47,7 @@
 # -- Tune --
 #$ OPTION_GROUP BEGIN: Tune options
 
-  #$ OPTION BEGIN (CHECKED): Marlin PRO tune
+  #$ OPTION BEGIN (UNCHECKED): Marlin PRO tune
         # -- Gyro Lowpass Filters --
         set gyro_lpf1_static_hz = 0
         set gyro_lpf2_static_hz = 0
@@ -88,8 +88,7 @@
         set tpa_breakpoint = 1250
     #$ OPTION END
 
-
-    #$ OPTION BEGIN (CHECKED): New Marlin tune
+    #$ OPTION BEGIN (UNCHECKED): New Marlin tune
         # -- Gyro Lowpass Filters --
         set gyro_lpf1_static_hz = 0
         set gyro_lpf1_dyn_min_hz = 0
@@ -124,7 +123,7 @@
         set tpa_breakpoint = 1250
     #$ OPTION END
 
-    #$ OPTION BEGIN (UNCHECKED): Old Marlin tune
+    #$ OPTION BEGIN (CHECKED): Old Marlin tune
         # -- Gyro Lowpass Filters --
         set gyro_lpf1_static_hz = 0
         set gyro_lpf1_dyn_min_hz = 0
