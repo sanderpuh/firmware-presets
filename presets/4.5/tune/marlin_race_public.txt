@@ -15,7 +15,8 @@
 #$ DESCRIPTION: This racing tune was developed by Marlin FPV to suit my new DRIPPUH 5" racer project. [DRIPPUH](https://droneshop.nl/drippuh-drone-racing-frame)
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION:
-#$ DESCRIPTION: This tune 'SHOULD' work with other ultralite 5" frames. For best performance set ESC PWM frequency to 48Khz locked and timing to 23 degrees.
+#$ DESCRIPTION: This tune 'SHOULD' work with other ultralite 5" frames. For best performance on BLHeli32 ESC, set PWM frequency to 24Khz Low and 48Khz High, timing to 24 degrees.
+#$ DESCRIPTION: For best performance on AM32 ESC, use minimum version 2.18 and use auto timing.
 #$ DESCRIPTION: The tune is slider based to make it easier to adjust for personal taste but use at your own risk.
 #$ DESCRIPTION:
 #$ DESCRIPTION: <br>
@@ -47,7 +48,7 @@
 # -- Tune --
 #$ OPTION_GROUP BEGIN: Tune options
 
-  #$ OPTION BEGIN (UNCHECKED): Marlin PRO tune
+  #$ OPTION BEGIN (UNCHECKED): Marlin PRO tune (Most spicy)
         # -- Gyro Lowpass Filters --
         set gyro_lpf1_static_hz = 0
         set gyro_lpf2_static_hz = 0
@@ -123,7 +124,7 @@
         set tpa_breakpoint = 1250
     #$ OPTION END
 
-    #$ OPTION BEGIN (CHECKED): Old Marlin tune
+    #$ OPTION BEGIN (CHECKED): Old Marlin tune (Safest)
         # -- Gyro Lowpass Filters --
         set gyro_lpf1_static_hz = 0
         set gyro_lpf1_dyn_min_hz = 0
@@ -172,7 +173,6 @@
 #$ OPTION_GROUP BEGIN: Dshot - MUST(!) choose ONE!
     #$ OPTION BEGIN (CHECKED): Dshot600
         set dshot_bidir = ON
-    
         set motor_pwm_protocol = DSHOT600
     #$ OPTION END
     
