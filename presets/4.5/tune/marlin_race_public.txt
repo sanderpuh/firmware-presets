@@ -17,18 +17,24 @@
 #$ DESCRIPTION: [DRIPPUH](https://droneshop.nl/drippuh-drone-racing-frame)
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION: <br>
-#$ DESCRIPTION:
 #$ DESCRIPTION: This tune 'SHOULD' work with other ultralite 5" frames. 
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION: Tested on DRIPPUH, Superbrezn and Typhon frames.
 #$ DESCRIPTION: <br>
+#$ DESCRIPTION: <br>
 #$ DESCRIPTION: For best performance on BLHeli32 ESC:
 #$ DESCRIPTION: <br>
-#$ DESCRIPTION: Set PWM frequency to 24Khz Low and 48Khz High, timing to 24 degrees (increase in case of desyncs).
+#$ DESCRIPTION: Set PWM frequency to 24Khz Low and 48Khz High,
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION: timing to 24 degrees (increase in case of desyncs).
+#$ DESCRIPTION: <br>
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION: For best performance on AM32 ESC:
 #$ DESCRIPTION: <br>
-#$ DESCRIPTION: Use minimum version 2.18! Settings: PWM frequency by rpm, timing auto.
+#$ DESCRIPTION: Use minimum version 2.18! 
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION: Settings: PWM frequency by rpm, timing auto.
+#$ DESCRIPTION: <br>
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION: The tune is slider based to make it easier to adjust 
 #$ DESCRIPTION: <br>
